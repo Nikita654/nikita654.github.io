@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="116" height="176" viewBox="0 0 116 176">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 30px;
+      }
+
+      .cls-1 {
+        opacity: 0.18;
+      }
+
+      .cls-2 {
+        fill: #222;
+        text-anchor: middle;
+        font-family: "Roboto-BoldCondensed";
+        font-weight: bold;
+      }
+    </style>
+  </defs>
+  <text transform="translate(56 176) scale(8.24)" class="cls-1"><tspan x="0" class="cls-2">B</tspan></text>
+</svg>

@@ -1,0 +1,68 @@
+@import "sass/vars"
+footer
+    background-color: #191919
+    color: $lgrey
+    span
+        a
+            text-decoration: none
+        a:active
+            color: #03A0CC
+        a:visited
+            color: #03A0CC
+        color: #03A0CC
+.footer-grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-column-gap: 20px
+    text-align: center
+    max-width: 1200px
+    margin: 0 auto
+    padding: 10vh 0
+    text-align: left
+.f-1
+    color: white
+    p
+        color: $lgrey    
+    .f-1-a
+        font-family: 'Montserrat Light', arial
+        text-decoration: none
+        color: inherit
+.f-h3
+    font-family: 'Raleway Bold', arial
+    color: white
+.f-time1,.f-time2
+    opacity: .5
+.f-text1,.f-time2
+    margin-top: 0
+.f-text2,.f-time1
+    margin-bottom: 0
+.f-grid
+    display: grid
+    grid-template-columns: 1fr 1fr
+.f-article
+    cursor: pointer
+    transition: color opacity .5s ease
+.f-article:hover
+    .f-time1,.f-time2
+        opacity: 1
+        color: white
+    .f-text1,.f-text2,
+        color: $lorange
+
+.end
+    background-color: black
+.end-grid
+    display: grid
+    grid-template-columns: 195px 115px 385px 185px 1fr
+    max-width: 1200px
+    margin: 0 auto
+.end-p
+    color: $lgrey
+.end-span
+    color: white
+    opacity: .7
+.end-span-next
+    cursor: pointer
+    transition: color .5s ease
+    &:hover
+        color: $orange

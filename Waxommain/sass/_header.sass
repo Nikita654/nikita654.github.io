@@ -1,0 +1,48 @@
+@import "sass/vars"
+header
+    background-image: url(img/sl-back.png)
+    background-size: cover
+    background-repeat: no-repeat
+    transition: opacity 3s ease
+.header-grid
+    padding-top: 3vh
+    display: grid
+    grid-template-columns: 3fr 5fr 1fr
+    max-width: 1200px
+    margin: 0 auto 
+.header-ul
+    cursor: pointer
+    font-family: 'Montserrat Light', arial
+    list-style-type: none
+    color: white
+    li 
+        display: inline
+        padding-right: 15px
+        transition: color .5s ease
+    li:hover
+        color: $lorange
+
+
+    
+.header-bag,.header-search
+    cursor: pointer
+    transition: fill .5s ease
+    padding-top: 10px
+    .cls-1
+        fill: white
+        opacity: 1
+.header-bag:hover
+    .cls-1
+        fill: $lorange
+.header-search:hover
+    .cls-1
+        fill: $lorange
+.header-search
+    padding-left: 30px
+.menulink
+    text-decoration: none
+    color: inherit
+    a:active
+        color: inherit
+    a:visited
+        color: inherit
