@@ -858,7 +858,7 @@ header {
   max-width: 600px; }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
-  header .h-next {
+  header .header-next {
     margin: 16px 0 0 7px; }
 
   .play .play-1linetext, .play .play-1linetext2 {
@@ -867,7 +867,7 @@ header {
   .aboutus .aboutusp {
     left: -5%; } }
 @media (min-width: 930px) and (max-width: 1199px) {
-  header .h-next {
+  header .header-next {
     margin: 16px 0 0 1px; }
 
   .play .play-1linetext, .play .play-1linetext2 {
@@ -896,7 +896,7 @@ header {
   .play .play-lineleft {
     display: none; } }
 @media (min-width: 850px) and (max-width: 929px) {
-  header .h-next {
+  header .header-next {
     margin: 16px 0 0 1px; }
 
   .play .play-1linetext, .play .play-1linetext2 {
@@ -931,16 +931,16 @@ header {
   body {
     font-size: 14px; }
 
-  header .h-grid-div2 {
+  header .header-grid-div2 {
     grid-template-columns: 1fr;
     text-align: center; }
-  header .h-menu-el {
+  header .header-menu-el {
     display: none; }
-  header .h-mouse {
+  header .header-mouse {
     margin: 0; }
-  header .h-menu-grid {
+  header .header-menu-grid {
     grid-template-columns: 1fr; }
-  header .h-next {
+  header .header-next {
     margin: 16px 0 0 1px; }
 
   .play .play-1linetext, .play .play-1linetext2 {
@@ -986,24 +986,24 @@ header {
   body {
     font-size: 14px; }
 
-  header .h-grid-div2 {
+  header .header-grid-div2 {
     grid-template-columns: 1fr;
     text-align: center; }
-  header .h-menu-el {
+  header .header-menu-el {
     display: none; }
-  header .h-centercontent {
+  header .header-centercontent {
     max-width: 100%;
     min-width: 100%;
     text-align: center; }
-  header .h-button {
+  header .header-button {
     margin: 0 auto 5vh auto; }
-  header .h-name {
+  header .header-name {
     font-size: 4.5em; }
-  header .h-mouse {
+  header .header-mouse {
     margin: 0; }
-  header .h-menu-grid {
+  header .header-menu-grid {
     grid-template-columns: 1fr; }
-  header .h-next {
+  header .header-next {
     margin: 16px 0 0 1px; }
 
   .play .play-1linetext, .play .play-1linetext2 {
@@ -1083,28 +1083,28 @@ header {
   body {
     font-size: 14px; }
 
-  header .h-grid-div2 {
+  header .header-grid-div2 {
     grid-template-columns: 1fr;
     text-align: center; }
-  header .h-menu-el {
+  header .header-menu-el {
     display: none; }
-  header .h-centercontent {
+  header .header-centercontent {
     position: relative;
     top: -25vh;
     max-width: 100%;
     min-width: 100%;
     text-align: center; }
-  header .h-button {
+  header .header-button {
     margin: 0 auto 5vh auto; }
-  header .h-name {
+  header .header-name {
     font-size: 3em; }
-  header .h-mouse {
+  header .header-mouse {
     margin: 0 auto; }
-  header .h-menu-grid {
+  header .header-menu-grid {
     grid-template-columns: 1fr; }
-  header .h-next {
+  header .header-next {
     margin: 16px 0 0 1px; }
-  header .h-share0 {
+  header .header-share0 {
     top: 10vh; }
 
   .play .play-1linetext, .play .play-1linetext2 {
