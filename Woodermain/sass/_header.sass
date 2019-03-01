@@ -17,12 +17,15 @@ header
     font-family: 'proximaNova regular',Arial, sans-serif
     list-style-type: none
 .header-grid-div1
+    animation-name: bounceInLeft
     text-align: left
 .header-grid-div3
+    animation-name: bounceInRight
     text-align: right
 .header-language,.h-languagear
     display: inline-block
 .header-logop
+    animation-name: Up
     font-family: 'proximaNova bold','Times New Roman', Times, serif
     color: white
     margin-top: 8px
@@ -52,7 +55,8 @@ header
     border: 1px $lgrey solid
 .header-infop
     margin: -2.5px 0 0 0
- 
+.header-menu-el
+    animation-name: Up
 .header-gorline1
     background-color: $orange
     background-size: cover
@@ -70,12 +74,14 @@ header
     max-width: 15px
     border-radius: 50%
 .gorlineright1
+    animation-name: Up 
     max-width: 1200px
     margin: 0 auto
 .gorlineright
     max-width: 105px
     margin-right: auto
 .gorlineright12
+    animation-name: Up
     max-width: 1200px
     margin: 0 auto
 .gorlineright2
@@ -102,6 +108,7 @@ header
     top: 10vh
     transform: rotate(90deg)
 .header-name
+    animation-name: bounceInRight
     margin-bottom: 0
     font-size: 6em
     letter-spacing: 20px
@@ -123,6 +130,7 @@ header
 
 
 .header-button
+    animation-name: bounceInLeft
     background-size: cover
     height: 40px 
     max-width: 300px
@@ -149,6 +157,7 @@ header
     margin-top: 14px
 
 .header-mouse
+    animation-name: Down
     cursor: pointer
     display: grid
     grid-template-columns: 1fr
@@ -166,6 +175,7 @@ header
     opacity: .2
     letter-spacing: 5px
 .header-share
+    animation-name: bounceInRight
     cursor: pointer
     text-align: right
     position: relative
