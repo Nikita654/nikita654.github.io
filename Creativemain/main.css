@@ -6,6 +6,7 @@ footer {
   color: white;
   width: 101%; }
   footer .footer-map {
+    animation-name: bounceInRight;
     background-image: url("img/map.png");
     overflow: scroll;
     max-width: 1600px;
@@ -26,9 +27,11 @@ header {
     font-family: "Myriad Pro", sans-serif;
     transition: color border-bottom 0.5s ease; }
   header .header-ul-li:hover {
+    cursor: pointer;
     color: #11749e;
     border-bottom: 2px #11749e solid; }
   header .header-iconNetworks {
+    animation-name: Up;
     background-size: cover;
     max-width: 30px;
     min-width: 30px;
@@ -36,6 +39,7 @@ header {
     padding-top: 36px;
     padding-left: 20px; }
   header .header-image {
+    animation-name: Up;
     padding-top: 20px; }
   header .header-grid {
     z-index: 3;
@@ -44,18 +48,22 @@ header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-column-gap: 20px; }
+  header .header-grid1 {
+    animation-name: Up; }
   header .header-ul {
     margin-bottom: 0px;
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
   header .header-h1 {
+    animation-name: bounceInLeft;
     font-family: "Gotham Bold", sans-serif;
     color: white;
     font-size: 10em;
     text-align: center;
     font-weight: 800; }
   header .header-h3 {
+    animation-name: bounceInRight;
     font-family: "Gotham Medium";
     color: #11749e;
     text-align: center;
@@ -64,6 +72,7 @@ header {
     top: -130px;
     letter-spacing: 18px; }
   header .header-p {
+    animation-name: Up;
     font-family: "Open sans";
     color: white;
     text-align: center;
@@ -71,6 +80,8 @@ header {
     top: -30px;
     padding-bottom: 100px; }
   header .header-button {
+    animation-name: Up;
+    cursor: pointer;
     outline: none;
     min-width: 80px;
     max-width: 80px;
@@ -96,6 +107,7 @@ header {
   transform: scale(1.1); }
 
 .header-iconNetworks:hover {
+  cursor: pointer;
   transform: scale(1.1); }
 
 .phone {
@@ -115,10 +127,13 @@ header {
     background-size: cover;
     width: 55%; }
   .phone .phone-img {
+    animation-name: bounceInRight;
     margin: 0 auto; }
-  .phone .phone-h2 {
+  .phone .phone-h2, .phone .phone-p {
+    animation-name: bounceInLeft;
     font-family: "Gotham Medium"; }
   .phone .phone-s {
+    animation-name: bounceInLeft;
     font-family: "Gotham Medium";
     background-color: #11749E;
     background-size: cover;
@@ -139,13 +154,15 @@ header {
   background-size: cover;
   text-align: center; }
   .blog .blog-h2 {
+    animation-name: bounceInRight;
     font-family: "Gotham Medium";
     text-align: center;
     padding-top: 50px; }
   .blog .blog-h3 {
     font-family: "Gotham Medium";
     color: #11749e; }
-  .blog .section-h2-small {
+  .blog .blog-h2-small {
+    animation-name: bounceInLeft;
     font-family: "Gotham Book";
     text-align: center; }
   .blog .blog-grid {
@@ -161,6 +178,7 @@ header {
       text-align: center;
       align-content: center; }
   .blog .blog-grid1 {
+    animation-name: Down;
     text-align: center; }
 
 .agency {
@@ -171,6 +189,7 @@ header {
   position: relative;
   top: -44px; }
   .agency .agency-h2 {
+    animation-name: bounceInRight;
     color: white;
     text-align: center;
     font-size: 3em;
@@ -179,6 +198,7 @@ header {
   .agency .agency-h3 {
     font-family: "Gotham Medium"; }
   .agency .agency-ico {
+    cursor: pointer;
     background-size: cover;
     min-width: 130px;
     max-width: 130px;
@@ -200,8 +220,11 @@ header {
     grid-row-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr; }
     .agency .agency-grid .agency-grid1 {
+      animation-name: Down;
       text-align: center;
       align-content: center; }
+  .agency .agency-ico:hover {
+    transform: scale(1.1); }
   .agency .agency-describe {
     font-family: "Open sans"; }
 
@@ -214,6 +237,9 @@ header {
     grid-template-columns: 1fr 3fr; }
     .extraline .extraline-left .extraline-p, .extraline .extraline-right .extraline-p {
       color: white; }
+  .extraline .extraline-logo:hover {
+    cursor: pointer;
+    transform: scale(1.1); }
   .extraline .extraline-grid {
     padding-bottom: 50px;
     background-size: cover;
@@ -225,6 +251,10 @@ header {
     grid-column-gap: 100px;
     grid-row-gap: 20px;
     grid-template-columns: 1fr 1fr; }
+  .extraline .extraline-left {
+    animation-name: bounceInLeft; }
+  .extraline .extraline-right {
+    animation-name: bounceInRight; }
 
 .inudog {
   position: relative;
@@ -239,6 +269,7 @@ header {
   font-family: "Gotham Medium"; }
 
 .inudog-work1 {
+  animation-name: bounceInRight;
   background-image: url(img/h3-img1.png);
   background-size: cover;
   background-position: center;
@@ -246,6 +277,7 @@ header {
   object-fit: none; }
 
 .inudog-article1 {
+  animation-name: bounceInLeft;
   background-size: cover;
   background-color: #222222;
   color: white; }
@@ -259,6 +291,7 @@ header {
   padding-bottom: 50px; }
 
 .inudog-work2 {
+  animation-name: bounceInLeft;
   background-image: url(img/h3-img2.png);
   background-size: cover;
   background-position: center;
@@ -266,6 +299,7 @@ header {
   object-fit: none; }
 
 .inudog-article2 {
+  animation-name: bounceInRight;
   background-size: cover;
   background-color: rgba(34, 34, 34, 0.18);
   color: black;
@@ -290,6 +324,7 @@ header {
   background-image: url(img/footback.png);
   color: white; }
   .questions .questions-h2 {
+    animation-name: bounceInLeft;
     font-family: "Gotham Medium";
     text-align: center;
     padding-top: 100px; }
@@ -297,6 +332,7 @@ header {
     max-width: 955px;
     margin: 0 auto; }
   .questions .questions-i {
+    animation-name: Down;
     font-family: "Open Sans", sans-serif;
     padding: 10px 0;
     padding-left: 10px;
@@ -311,6 +347,7 @@ header {
     position: relative;
     font-size: 1em; }
   .questions .questions-textarea {
+    animation-name: bounceInRight;
     max-width: 955px;
     margin: 0 auto;
     position: relative; }
@@ -327,6 +364,8 @@ header {
       margin-bottom: 80px;
       font-size: 1em; }
   .questions .questions-button {
+    animation-name: bounceInLeft;
+    cursor: pointer;
     background-size: cover;
     max-width: 160px;
     min-width: 160px;
@@ -342,16 +381,23 @@ header {
     outline: none; }
 
 .questions-button:hover {
+  transform: scale(1.1);
   background-color: #0f6387;
   color: #f2f2f2; }
+
+.questions-button:active {
+  background-color: #0c5270;
+  color: #e6e6e6; }
 
 .team {
   font-family: "Gotham Medium";
   background-size: cover; }
   .team .team-h2 {
+    animation-name: bounceInLeft;
     text-align: center;
     padding-top: 120px; }
   .team .team-h3 {
+    animation-name: bounceInRight;
     font-family: "Open sans";
     text-align: center; }
   .team .team-grid {
@@ -365,6 +411,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     top: 60px; }
   .team .team-grid1 {
+    animation-name: Down;
     text-align: center; }
 
 .team-face {
@@ -575,6 +622,121 @@ header {
   body .section-logoABC {
     top: -25vh;
     margin-bottom: -25vh; } }
+.animatable {
+  visibility: hidden;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused; }
+
+.animated {
+  visibility: visible;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-play-state: running; }
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px); }
+  60% {
+    transform: translateX(20px); }
+  80% {
+    transform: translateX(-5px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes Down {
+  0% {
+    opacity: 0;
+    transform: translateY(2000px); }
+  60% {
+    transform: translateY(20px); }
+  80% {
+    transform: translateY(5px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+@keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px); }
+  60% {
+    transform: translateX(-20px); }
+  80% {
+    transform: translateX(-5px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes Up {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px); }
+  60% {
+    transform: translateY(-20px); }
+  80% {
+    transform: translateY(-5px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+@keyframes bounceIDown {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes bounceLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(0px); }
+  20% {
+    transform: translateY(-5px); }
+  40% {
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(-500px); } }
+@keyframes ReLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0px); }
+  20% {
+    transform: translateX(-5px); }
+  40% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 0;
+    transform: translateX(-500px); } }
+@keyframes Rightmoveimg {
+  0% {
+    max-width: 100%;
+    min-width: 100%;
+    left: 0; }
+  100% {
+    max-width: 0;
+    min-width: 0;
+    left: 100%; } }
+@keyframes Leftmoveimg {
+  0% {
+    max-width: 100%;
+    min-width: 100%; }
+  100% {
+    max-width: 0;
+    min-width: 0; } }
 @font-face {
   font-family: "Myriad Pro";
   src: url("../fonts/Myriad Pro.otf") format("otf"); }
@@ -601,11 +763,12 @@ header {
   src: url("../fonts/RobotoRegular.ttf") format("ttf"); }
 body {
   font-size: 16px;
-  min-width: 320px;
   font-family: "Open sans", sans-serif;
-  overflow-x: hidden; }
+  overflow: hidden;
+  overflow-y: auto; }
 
 h2 {
+  z-index: 9999;
   font-size: 3em;
   font-family: "Lato", sans-serif; }
 

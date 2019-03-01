@@ -11,7 +11,7 @@
 @import "sass/_questions.sass"
 @import "sass/_team.sass"
 @import "sass/_media.sass"
-
+@import "sass/_animation.sass"
 
 @font-face
     font-family: 'Myriad Pro'
@@ -44,17 +44,18 @@
 
 body
     font-size: 16px
-    min-width: 320px
     font-family: 'Open sans', sans-serif
-    overflow-x: hidden
+    overflow: hidden
+    overflow-y: auto
     
     
 h2 
-        font-size: 3em
-        font-family: 'Lato', sans-serif
+    z-index: 9999
+    font-size: 3em
+    font-family: 'Lato', sans-serif
 h3 
-        font-size: 1.5em
-        font-family: 'Lato', sans-serif
+    font-size: 1.5em
+    font-family: 'Lato', sans-serif
 a
     text-decoration: none
     color: inherit
