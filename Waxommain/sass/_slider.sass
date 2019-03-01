@@ -4,12 +4,14 @@
     align-content: center
     color: white
 .slider-h2
+    animation-name: bounceInLeft
     position: relative
     padding-top: 20vh
     top: 4vh
     font-family: 'Raleway Medium', arial
     font-weight: 100
 .slider-p
+    animation-name: bounceInRight
     position: relative
     top: -4vh
     max-width: 550px
@@ -27,6 +29,7 @@
     background-color: rgba(90,60,60,0)
     border: 2px $lorange solid
 .header-grid-circle
+    animation-name: Down
     position: relative
     top: 5vh
     display: grid
@@ -40,8 +43,10 @@
     border: 2px $lorange solid
     
 
-
+.slider-button
+    animation-name: Up
 .button
+    
     outline: none
     font-family: 'Raleway ExtraBold', arial
     font-weight: 700
@@ -61,6 +66,7 @@
     transform: scale(1.05)
 
 .slider-arrows
+    animation-name: Up
     position: relative
     top: -25vh
     display: grid
@@ -72,14 +78,14 @@
     z-index: 0
 
 
+.slider-right
+    transform: rotate(180deg)
 .slider-left:hover
     .cls-1
         fill: $lorange
 .slider-right:hover
     .cls-1
         fill: $lorange
-.slider-right
-    transform: rotate(180deg)
     
 .slider-left,.slider-right
     cursor: pointer

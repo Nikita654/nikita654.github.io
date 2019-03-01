@@ -3,11 +3,13 @@
     text-align: center
     color: $lgrey
 .rposts-h2
+    animation-name: bounceInLeft
     font-family: 'Raleway SemiBold', arial
     color: $dgrey
     margin-top: 7vh
     margin-bottom: 1vh
 .rposts-p-up
+    animation-name: bounceInRight
     max-width: 750px
     margin: 0 auto 4vh auto
 .rposts-grid
@@ -16,6 +18,7 @@
     max-width: 1200px
     margin: 0 auto
     .rposts-gr
+        animation-name: Down
         cursor: pointer
         text-align: left
         color: $orange
@@ -100,9 +103,11 @@
     margin: 0 auto
     transition: transform fill rotate .5s ease
 .rposts-left
+    
     cursor: pointer
     margin-bottom: 2vh
 .rposts-right
+    
     cursor: pointer
     transform: rotate(180deg)
     margin-bottom: 2vh

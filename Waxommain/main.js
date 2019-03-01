@@ -19,34 +19,25 @@ function showsSlides(n) {
     if (n==0){slideindex=5;n=5};
     if (n==6){slideindex=1;n=1;};
     back[0].style.filter= "brightness(50%)";
-    back[0].style.opacity="0.8";
     for(let i=0; i<5;i++){
     circle[i].classList.remove("header-circle-active");};
     if(n==1){
-        circle[0].classList.add("header-circle-active");
         back[0].style.backgroundImage="url(Waxommain/img/sl-back.png)";
     };
     if(n==2){
-        circle[1].classList.add("header-circle-active");
         back[0].style.backgroundImage="url(Waxommain/img/partners-back.png)";
     };
     if(n==3){
-        circle[2].classList.add("header-circle-active");
-
         back[0].style.backgroundImage="url(Waxommain/img/playback.png)";
     };
     if(n==4){
-        circle[3].classList.add("header-circle-active");
-        
-
         back[0].style.backgroundImage="url(Waxommain/img/backh1.png)";
     };
     if(n==5){
-        circle[4].classList.add("header-circle-active");
-
         back[0].style.backgroundImage="url(Waxommain/img/vp-back.png)";
     };
-    setTimeout(function(){back[0].style.opacity="1";back[0].style.filter= "brightness(100%)";},800);
+    circle[n-1].classList.add("header-circle-active");
+    setTimeout(function(){back[0].style.filter= "brightness(100%)";},800);
                
 };
 
@@ -139,3 +130,26 @@ function rpostsImage(n){
                    
    
 };
+
+
+
+var doAnimations = function() {
+    let offset =  window.screen.availHeight + window.pageYOffset,
+        animatables = document.getElementsByClassName('animatable');
+    if (animatables.length == 0) {
+      window.removeEventListener('scroll', doAnimations);
+    }
+   
+    for(let i=0;i<animatables.length;i++){
+      let animatable = animatables[i],counter;
+      if (window.screen.availHeight<animatable.clientHeight) {counter=800} else counter=40;
+      if ((animatable.getBoundingClientRect().top + animatable.clientHeight  + window.pageYOffset-counter) < offset) {
+      animatable.classList.remove('animatable');
+      animatable.classList.add('animated');
+      };
+    };};
+    window.addEventListener('load', doAnimations,false);
+    window.addEventListener('scroll', doAnimations,false);
+   
+    doAnimations();
+    
