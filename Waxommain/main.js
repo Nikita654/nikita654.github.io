@@ -151,4 +151,6 @@ var doAnimations = function() {
     window.addEventListener('load', doAnimations,false);
     window.addEventListener('scroll', doAnimations,false);
     doAnimations();
-    
+    doAnimations();
+    doAnimations();
+    doAnimations();
