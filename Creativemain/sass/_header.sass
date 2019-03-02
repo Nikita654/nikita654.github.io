@@ -1,9 +1,21 @@
 @import "sass/_vars.sass"
+body
+    header
+        .header-button:hover
+            transform: scale(1.1)
+        .header-iconNetworks:hover
+            cursor: pointer
+            transform: scale(1.1)
 header
     background-image: url(img/topback.png)
     background-size: cover
     background-position: center
     align-content: center
+    .header-button:hover
+        transform: scale(1.1)
+    .header-iconNetworks:hover
+        cursor: pointer
+        transform: scale(1.1)
     .header-ul-li
         color: white
         text-align: center
@@ -89,9 +101,4 @@ header
             margin: 25px 25px
             .menu-svgcolor
                 background-color: orange
-
-.header-button:hover
-            transform: scale(1.1)
-.header-iconNetworks:hover
-            cursor: pointer
-            transform: scale(1.1)          
+          

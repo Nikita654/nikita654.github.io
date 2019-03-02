@@ -12,8 +12,12 @@ var doAnimations = function() {
       let animatable = animatables[i],counter;
       if (window.screen.availHeight<animatable.clientHeight) {counter=800} else counter=40;
       if ((animatable.getBoundingClientRect().top + animatable.clientHeight  + window.pageYOffset-counter) < offset) {
+      setTimeout(function(){
+        animatable.classList.remove('animated');
+        },1000);
       animatable.classList.remove('animatable');
       animatable.classList.add('animated');
+      
       };
     };};
     doAnimations();

@@ -1,23 +1,92 @@
 @import url(sass/normalize.css);
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/Myriad Pro.otf") format("otf"); }
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("../fonts/Gotham Medium.otf") format("otf"); }
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../fonts/Gotham Book.ttf") format("ttf"); }
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../fonts/Gotham Bold.otf") format("otf"); }
+@font-face {
+  font-family: "Open sans";
+  src: url("../fonts/Opensans.ttf") format("ttf"); }
+@font-face {
+  font-family: "Open sans Bold";
+  src: url("../fonts/opensansBold.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto BoldConsed";
+  src: url("../fonts/Roboto boldConsed.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../fonts/RobotoRegular.ttf") format("ttf"); }
+body {
+  font-size: 16px;
+  font-family: "Open sans", sans-serif;
+  overflow: hidden;
+  overflow-y: auto; }
+
+h2 {
+  z-index: 9999;
+  font-size: 3em;
+  font-family: "Lato", sans-serif; }
+
+h3 {
+  font-size: 1.5em;
+  font-family: "Lato", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; }
+
+.section-logoABC {
+  font-size: 16em;
+  font-family: "Roboto BoldConsed";
+  font-weight: 900;
+  margin: 0;
+  color: grey;
+  opacity: 0.4;
+  text-align: center;
+  position: relative;
+  top: -20vh;
+  margin-bottom: -20vh; }
+
 footer {
   position: relative;
   bottom: -24px;
   background-color: #222222;
   color: white;
-  width: 101%; }
+  width: 100%; }
+  footer .footer-left-p {
+    padding-bottom: 10px;
+    animation-name: Down; }
   footer .footer-map {
     animation-name: bounceInRight;
     background-image: url("img/map.png");
-    overflow: scroll;
     max-width: 1600px;
     margin: 0 auto;
     height: 332px; }
+
+body header .header-button:hover {
+  transform: scale(1.1); }
+body header .header-iconNetworks:hover {
+  cursor: pointer;
+  transform: scale(1.1); }
 
 header {
   background-image: url(img/topback.png);
   background-size: cover;
   background-position: center;
   align-content: center; }
+  header .header-button:hover {
+    transform: scale(1.1); }
+  header .header-iconNetworks:hover {
+    cursor: pointer;
+    transform: scale(1.1); }
   header .header-ul-li {
     color: white;
     text-align: center;
@@ -102,13 +171,6 @@ header {
       margin: 25px 25px; }
       header .header-button .header-button-img .menu-svgcolor {
         background-color: orange; }
-
-.header-button:hover {
-  transform: scale(1.1); }
-
-.header-iconNetworks:hover {
-  cursor: pointer;
-  transform: scale(1.1); }
 
 .phone {
   width: 100%;
@@ -377,7 +439,7 @@ header {
     border: 0px solid white;
     color: white;
     font-size: 1.3em;
-    transition: color transform background-color 0.5s ease;
+    transition: all 0.5s ease;
     outline: none; }
 
 .questions-button:hover {
@@ -650,7 +712,7 @@ header {
 @keyframes Down {
   0% {
     opacity: 0;
-    transform: translateY(2000px); }
+    transform: translateY(500px); }
   60% {
     transform: translateY(20px); }
   80% {
@@ -737,60 +799,5 @@ header {
   100% {
     max-width: 0;
     min-width: 0; } }
-@font-face {
-  font-family: "Myriad Pro";
-  src: url("../fonts/Myriad Pro.otf") format("otf"); }
-@font-face {
-  font-family: "Gotham Medium";
-  src: url("../fonts/Gotham Medium.otf") format("otf"); }
-@font-face {
-  font-family: "Gotham Book";
-  src: url("../fonts/Gotham Book.ttf") format("ttf"); }
-@font-face {
-  font-family: "Gotham Bold";
-  src: url("../fonts/Gotham Bold.otf") format("otf"); }
-@font-face {
-  font-family: "Open sans";
-  src: url("../fonts/Opensans.ttf") format("ttf"); }
-@font-face {
-  font-family: "Open sans Bold";
-  src: url("../fonts/opensansBold.ttf") format("ttf"); }
-@font-face {
-  font-family: "Roboto BoldConsed";
-  src: url("../fonts/Roboto boldConsed.ttf") format("ttf"); }
-@font-face {
-  font-family: "Roboto Regular";
-  src: url("../fonts/RobotoRegular.ttf") format("ttf"); }
-body {
-  font-size: 16px;
-  font-family: "Open sans", sans-serif;
-  overflow: hidden;
-  overflow-y: auto; }
-
-h2 {
-  z-index: 9999;
-  font-size: 3em;
-  font-family: "Lato", sans-serif; }
-
-h3 {
-  font-size: 1.5em;
-  font-family: "Lato", sans-serif; }
-
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer; }
-
-.section-logoABC {
-  font-size: 16em;
-  font-family: "Roboto BoldConsed";
-  font-weight: 900;
-  margin: 0;
-  color: grey;
-  opacity: 0.4;
-  text-align: center;
-  position: relative;
-  top: -20vh;
-  margin-bottom: -20vh; }
 
 /*# sourceMappingURL=main.css.map */
