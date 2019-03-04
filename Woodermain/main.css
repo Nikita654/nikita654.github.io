@@ -1163,7 +1163,7 @@ header {
   .aboutus .aboutusp {
     margin: 0 0 -40vh 0;
     top: -70vh; } }
-@media (min-width: 480px) and (max-width: 639px) {
+@media (min-width: 509px) and (max-width: 639px) {
   body {
     font-size: 14px; }
 
@@ -1260,7 +1260,7 @@ header {
     min-width: 50px; }
   .play .play-p {
     padding: 0; } }
-@media (max-width: 481px) {
+@media (max-width: 510px) {
   body {
     font-size: 14px; }
 
@@ -1288,95 +1288,97 @@ header {
   header .header-share0 {
     top: 10vh; }
 
-  .play .play-1linetext, .play .play-1linetext2 {
+  main .play .play-1linetext, main .play .play-1linetext2 {
     padding: 0; }
-  .play .play-h2 {
+  main .play .play-h2 {
     font-size: 3em; }
-
-  .aboutus .aboutusp {
+  main .aboutus .aboutusp {
     left: -35%;
     top: -55vh;
     margin: 0 0 -25vh 0; }
-  .aboutus .ab-line1, .aboutus .ab-line2 {
+  main .aboutus .ab-line1, main .aboutus .ab-line2 {
     display: none; }
-  .aboutus .aboutus-div1 {
+  main .aboutus .aboutus-div1 {
     position: relative;
     left: 0; }
-
-  .table .table-grid {
+  main .table .table-grid {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 1200px;
     margin: 0 auto;
     grid-row-gap: 40px; }
-  .table .t-1linetext, .table .t-1linetext2 {
+  main .table .t-1linetext, main .table .t-1linetext2 {
     grid-template-columns: 1fr; }
-  .table .t-1line1 {
+  main .table .t-1line1 {
     display: none; }
-  .table .t-1lfine2 {
+  main .table .t-1lfine2 {
     display: none; }
-  .table .t-1pn {
+  main .table .t-1pn {
     text-align: left;
     font-size: 3em; }
-  .table .t-1h2 {
+  main .table .t-1h2 {
     font-size: 3em; }
-
-  .decor .decor-grid {
+  main .decor .decor-grid {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 1200px;
     margin: 0 auto;
     grid-row-gap: 40px; }
-  .decor .decor-div1 {
+  main .decor .decor-div1 {
     max-width: 90%;
     margin: 0 auto; }
-  .decor .d-1pn {
+  main .decor .d-1pn {
     text-align: left;
     font-size: 3em; }
-  .decor .d-1h2 {
+  main .decor .d-1h2 {
     font-size: 3em; }
-
-  .play .play-grid {
+  main .play .play-grid {
     display: grid;
     grid-template-columns: 1fr; }
-  .play .play-lineleft {
-    display: none; }
-  .play .play-1linetext, .play .play-1linetext2 {
-    grid-template-columns: 1fr; }
-  .play .play-line1 {
-    display: none; }
-  .play .play-line2 {
-    display: none; }
-  .play .h-button {
+  main .play .play-h2 {
     max-width: 80%;
     min-width: 80%;
     margin: 0 auto; }
-
-  .video .video-h2 {
-    font-size: 3em; }
-  .video .video-grid {
+  main .play .play-lineleft {
+    display: none; }
+  main .play .play-1linetext, main .play .play-1linetext2 {
     grid-template-columns: 1fr; }
-  .video .video-p {
+  main .play .play-line1 {
+    display: none; }
+  main .play .play-line2 {
+    display: none; }
+  main .play .play-button {
+    max-width: 80%;
+    min-width: 80%;
+    margin: 0 auto; }
+  main .play .play-p {
+    max-width: 80%;
+    min-width: 80%;
+    margin: 0 auto;
+    padding: 0 0 15px 0; }
+  main .video .video-h2 {
+    font-size: 3em; }
+  main .video .video-grid {
+    grid-template-columns: 1fr; }
+  main .video .video-p {
     max-width: 90%;
     margin: 0 auto; }
-
-  .aboutus .ab-h2 {
+  main .aboutus .ab-h2 {
     font-size: 3em;
     max-width: 80%;
     margin: 0 auto; }
-  .aboutus .ab-p {
+  main .aboutus .ab-p {
     max-width: 80%;
     margin: 0 auto; }
-  .aboutus .aboutus-grid {
+  main .aboutus .aboutus-grid {
     z-index: 5;
     grid-template-columns: 1fr; }
-  .aboutus .ab-1linetext, .aboutus .ab-1linetext2 {
+  main .aboutus .ab-1linetext, main .aboutus .ab-1linetext2 {
     grid-template-columns: 4fr 2fr; }
-
-  .table .t-1line1 {
+  main .table .t-1line1 {
     max-width: 50px;
     min-width: 50px; }
-  .table .t-1h2, .table .t-1p, .table .a-main, .table .t-1pn {
+  main .table .t-1h2, main .table .t-1p, main .table .a-main, main .table .t-1pn {
     max-width: 90%;
     margin: 0 auto; }
 

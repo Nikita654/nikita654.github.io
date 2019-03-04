@@ -1,7 +1,7 @@
 
 let index=0;
 function visibleMenu(n){
-    visible(index+=n);
+    if (window.screen.availWidth<849){ visible(index+=n);};
 };
 
 function visible(n){
@@ -24,12 +24,12 @@ function visible(n){
         menu[i].style.animationName="bounceLeft";}
         setTimeout(function(){for(let i=0;i<a;i++){
         menu[i].style.display="none";}
-        },1000);
+        },500);
     }
     setTimeout(function(){
         for(let i=0;i<a;i++){
         menu[i].classList.remove("animated");menu[i].style.animationName="";}
-    },1500);
+    },1000);
 };
 
 

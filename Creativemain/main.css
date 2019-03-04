@@ -583,6 +583,8 @@ header {
   header .header-h3 {
     letter-spacing: 12px;
     top: -30px; }
+  header .hidden-menu-el {
+    display: none; }
 
   .agency .agency-grid {
     grid-template-columns: 1fr; }
@@ -634,6 +636,8 @@ header {
   header .header-ul-li:hover {
     color: #11749e;
     border-bottom: 0px #11749e solid; }
+  header .hidden-menu-el {
+    display: none; }
 
   .agency .agency-grid {
     grid-template-columns: 1fr; }

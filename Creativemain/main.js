@@ -3,6 +3,53 @@ function scrolle()
   doAnimations();
   doAnimations();};
 
+
+
+  let index=0;
+  function visibleMenu(n){
+      if (window.screen.availWidth<926){ visible(index+=n);};
+  };
+  
+  function visible(n){
+      let menu=document.getElementsByClassName("hidden-menu-el"),a;
+      a=menu.length;
+      
+      for(let i=0;i<a;i++){    
+      menu[i].classList.remove("animated");
+      menu[i].style.display="none";};
+      
+      if (n%2==1){
+          for(let i=0;i<a;i++){
+          menu[i].style.display="block";
+          menu[i].classList.add("animated");
+          menu[i].style.animationName="Up";}
+      }; if(n%2==0) {
+          for(let i=0;i<a;i++){
+          menu[i].style.display="block";
+          menu[i].classList.add("animated");
+          menu[i].style.animationName="bounceLeft";}
+          setTimeout(function(){for(let i=0;i<a;i++){
+          menu[i].style.display="none";}
+          },550);
+      }
+      setTimeout(function(){
+          for(let i=0;i<a;i++){
+          menu[i].classList.remove("animated");menu[i].style.animationName="";}
+      },1000);
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
 var doAnimations = function() {
     let offset =  window.screen.availHeight + window.pageYOffset,
         animatables = document.getElementsByClassName('animatable');
