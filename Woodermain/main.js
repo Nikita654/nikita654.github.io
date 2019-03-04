@@ -1,22 +1,55 @@
-var index=0;
+
+let index=0;
 function visibleMenu(n){
     visible(index+=n);
 };
+
 function visible(n){
-    let menu=document.getElementsByClassName("hidden-menu-el");
-    let a=menu.length;
+    let menu=document.getElementsByClassName("hidden-menu-el"),a;
+    a=menu.length;
+    
+    for(let i=0;i<a;i++){    
+    menu[i].classList.remove("animated");
+    menu[i].style.display="none";};
+    
     if (n%2==1){
-    for(let i=0;i<a;i++){
+        for(let i=0;i<a;i++){
         menu[i].style.display="block";
-        menu[i].style.animationName="come";
-    };} else {for(let i=0;i<a;i++){
-        menu[i].style.display="none";
-        menu[i].style.animationName="come";
-    };}
+        menu[i].classList.add("animated");
+        menu[i].style.animationName="Up";}
+    }; if(n%2==0) {
+        for(let i=0;i<a;i++){
+        menu[i].style.display="block";
+        menu[i].classList.add("animated");
+        menu[i].style.animationName="bounceLeft";}
+        setTimeout(function(){for(let i=0;i<a;i++){
+        menu[i].style.display="none";}
+        },1000);
+    }
+    setTimeout(function(){
+        for(let i=0;i<a;i++){
+        menu[i].classList.remove("animated");menu[i].style.animationName="";}
+    },1500);
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function scrolle()
-{window.scrollBy(0,800)};
+{window.scrollBy(0,800);
+    doAnimations();
+    doAnimations();};
 
 
 var doAnimations = function() {
@@ -30,6 +63,9 @@ var doAnimations = function() {
       let animatable = animatables[i],counter;
       if (window.screen.availHeight<animatable.clientHeight) {counter=800} else counter=40;
       if ((animatable.getBoundingClientRect().top + animatable.clientHeight  + window.pageYOffset-counter) < offset) {
+        setTimeout(function(){
+            animatable.classList.remove('animated');
+            },1200);
       animatable.classList.remove('animatable');
       animatable.classList.add('animated');
       };

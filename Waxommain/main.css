@@ -693,8 +693,8 @@ header {
   -webkit-animation-name: Up;
           animation-name: Up;
   cursor: pointer;
-  -webkit-transition: background-color color 0.5s ease;
-  transition: background-color color 0.5s ease; }
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 .project-gridel:hover .project-sharpbite, .project-gridel:hover .project-text, .project-gridel:hover .project-img-in {
   background-color: #372F2D; }
@@ -1133,14 +1133,15 @@ header {
   background-color: #999898;
   border: 2px rgba(90, 60, 60, 0) solid;
   border-radius: 50%;
-  -webkit-transition: background-color border .5s ease;
-  transition: background-color border .5s ease; }
+  -webkit-transition: background-color border 0.5s ease;
+  transition: background-color border 0.5s ease; }
 
 .slider-circle:hover {
   background-color: rgba(90, 60, 60, 0);
   border: 2px #998675 solid; }
 
 .header-grid-circle {
+  cursor: pointer;
   -webkit-animation-name: Down;
           animation-name: Down;
   position: relative;
@@ -1157,6 +1158,7 @@ header {
   border: 2px #998675 solid; }
 
 .slider-button {
+  cursor: pointer;
   -webkit-animation-name: Up;
           animation-name: Up; }
 
@@ -1171,17 +1173,17 @@ header {
   outline: none;
   border: 0px #998675 solid;
   border-bottom: 3px #372F2D solid;
-  font-size: .9em;
-  -webkit-transition: color transform background-color filter 1.5s ease;
-  transition: color transform background-color filter 1.5s ease; }
+  font-size: 0.9em;
+  -webkit-transition: background-color color 0.5s ease;
+  transition: background-color color 0.5s ease; }
 
 .button:hover {
-  background-color: #8d7968;
+  background-color: #7e6d5d;
   color: #f2f2f2; }
 
 .button:active {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05); }
+  background-color: #433a32;
+  color: #bfbfbf; }
 
 .slider-arrows {
   -webkit-animation-name: Up;
@@ -1209,8 +1211,8 @@ header {
 .slider-left, .slider-right {
   cursor: pointer;
   z-index: 2;
-  -webkit-transition: fill .5s ease;
-  transition: fill .5s ease; }
+  -webkit-transition: fill 0.5s ease;
+  transition: fill 0.5s ease; }
 
 .video {
   position: relative;

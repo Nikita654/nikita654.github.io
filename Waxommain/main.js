@@ -10,7 +10,7 @@ function prevBack(n) {
 };
 
 function currentBack(n){
-    showsSlides(slideindex= n,n);
+    showsSlides(slideindex= n);
 };
 
 function showsSlides(n,p) {
@@ -70,20 +70,15 @@ function ProjectChoose(x){
     for(let i=0;i<m-1;i++){
         menuButton[i].classList.remove("categoryACTIVE");
         chooseArticle[i].classList.remove("project-gridelACTIVE");
+        chooseArticle[i].style.display="none";
 };
+    chooseArticle[m-1].style.display="none";
     chooseArticle[m-1].classList.remove("project-gridelACTIVE");
     menuButton[x].classList.add("categoryACTIVE");
     k=a.length;
     for(let i=1;i<k;i++){
-        chooseArticle[a[i]].classList.add("project-gridelACTIVE");};
-        
-    setTimeout(
-        function(){for(let i=0;i<m-1;i++){
-        menuButton[i].classList.remove("categoryACTIVE");
-        chooseArticle[i].classList.remove("project-gridelACTIVE");
-};
-    chooseArticle[m-1].classList.remove("project-gridelACTIVE");},3000);
-   
+        //chooseArticle[a[i]].classList.add("project-gridelACTIVE");
+        chooseArticle[a[i]].style.display="block";};
 };
 
 function prevrposts(n){
@@ -163,6 +158,9 @@ var doAnimations = function() {
       let animatable = animatables[i],counter;
       if (window.screen.availHeight<animatable.clientHeight) {counter=800} else counter=40;
       if ((animatable.getBoundingClientRect().top + animatable.clientHeight  + window.pageYOffset-counter) < offset) {
+    setTimeout(function(){
+        animatable.classList.remove('animated');
+        },1200);
       animatable.classList.remove('animatable');
       animatable.classList.add('animated');
       };

@@ -1,5 +1,7 @@
 function scrolle()
-{window.scrollBy(0,700)};
+{window.scrollBy(0,700);
+  doAnimations();
+  doAnimations();};
 
 var doAnimations = function() {
     let offset =  window.screen.availHeight + window.pageYOffset,
@@ -14,7 +16,7 @@ var doAnimations = function() {
       if ((animatable.getBoundingClientRect().top + animatable.clientHeight  + window.pageYOffset-counter) < offset) {
       setTimeout(function(){
         animatable.classList.remove('animated');
-        },1000);
+        },1200);
       animatable.classList.remove('animatable');
       animatable.classList.add('animated');
       
