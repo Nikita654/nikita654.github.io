@@ -163,14 +163,16 @@
 
     <div class="questions">
     	<h2 class="questions-h2 animatable"> We’d love to hear about your project. </h2>
-    	<div class="questions-logo"><p class="section-logoABC">C</p></div>
+		<div class="questions-logo"><p class="section-logoABC">C</p></div>
+		<form method="POST" action="send.php">
     	<div class="questions-input">
-    	<input type="text" class="questions-i animatable" placeholder="Name">
-    	<input type="text" class="questions-i animatable" placeholder="Email">
+
+    	<input type="text" name="fio" class="questions-i animatable" placeholder="Name">
+    	<input type="text" name="email" class="questions-i animatable" placeholder="Email">
     	<input type="text" class="questions-i animatable" placeholder="Phone">
     	</div>
     	<div class="questions-textarea animatable"><textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea></div>
-    	<button class="questions-button animatable">SUBMIT</button>
+    	<button class="questions-button animatable">SUBMIT</button></form>
     </div>
  </main>
  <footer>
