@@ -10,5 +10,5 @@ $email = trim($email);
 //echo $fio;
 //echo "<br>";
 //echo $email;
-mail("info@svai-servis.ru", "Заказать звонок", "Имя:".$fio.". E-mail: ".$email ,"From: info@svai-servis.ru \r\n")
+mail("xyk654@bk.ru", "Заказать звонок", "Имя:".$fio.". E-mail: ".$email ,"From: xyk654@bk.ru \r\n")
 ?>
