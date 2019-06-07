@@ -1,6 +1,6 @@
 <?php
-$fio = $_POST['fio'];
-$email = $_POST['email'];
+$fio = $_POST['userName'];
+$email = $_POST['password'];
 $fio = htmlspecialchars($fio);
 $email = htmlspecialchars($email);
 $fio = urldecode($fio);
