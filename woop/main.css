@@ -2,6 +2,7 @@
 @font-face{font-family:"Avenir Next Cyr-Demi";src:url("/woop/fonts/AvenirNextCyrDemi.woff") format("woff")}
 @font-face{font-family:"Avenir Next Cyr";src:url("/woop/fonts/AvenirNextCyr.woff") format("woff")}
 body{
+    max-width: 100%;
     overflow: hidden;
     overflow-y: auto;
     overflow-x: hidden;
