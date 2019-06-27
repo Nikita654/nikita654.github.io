@@ -1,6 +1,6 @@
 @import url(normalize.css);
-@font-face{font-family:"Avenir Next Cyr-Demi";src:url("/fonts/AvenirNextCyrDemi.woff") format("woff")}
-@font-face{font-family:"Avenir Next Cyr";src:url("/fonts/AvenirNextCyr.woff") format("woff")}
+@font-face{font-family:"Avenir Next Cyr-Demi";src:url("/woop/fonts/AvenirNextCyrDemi.woff") format("woff")}
+@font-face{font-family:"Avenir Next Cyr";src:url("/woop/fonts/AvenirNextCyr.woff") format("woff")}
 body{
     overflow: hidden;
     overflow-y: auto;
