@@ -34,7 +34,7 @@ header{
 
 }
 .h-left{
-    grid-template-columns: 4fr 4.5fr;
+    grid-template-columns: 4fr 6fr;
 }
 .h-lang{
     margin-left: auto;
@@ -604,8 +604,8 @@ top: 26%;
     grid-template-columns:  410px 1fr;
 }
 .lider-win{
-    max-width: 150px;
-    min-width: 150px;
+    max-width: 165px;
+    min-width: 165px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -632,7 +632,7 @@ top: 26%;
     margin-right:28px;
 }
 .lider-game{
-    margin: 0 55px 0 40px;
+    margin: 0 55px 0 35px;
     display: flex;
     margin-bottom: 44px;
 }
@@ -1133,8 +1133,8 @@ footer a:hover{
         text-align: left;
     }
     .lider-win{
-        max-width: 250px;
-        min-width: 250px;
+        max-width: 265px;
+        min-width: 265px;
         text-align: left;
     }
     .lider-number{
