@@ -4,6 +4,7 @@
 body{
     overflow: hidden;
     overflow-y: auto;
+    overflow-x: hidden;
     background-color: #001428;
     color: white;
 
@@ -1239,10 +1240,10 @@ footer a:hover{
     }
     .box-text4{
         left: 66%;
-        top: 66%;
+        top: 63%;
     }
     .box-text5{
-        left: 70%;
+        left: 66%;
         top: 86%;
     }
     .box-key{
