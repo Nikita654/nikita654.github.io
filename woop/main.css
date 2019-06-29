@@ -76,6 +76,7 @@ header{
 .h-lang-current{
     cursor:pointer;
     margin-top: 26px;
+    transition: all .5s ease;
 }
 .h-lang-current:hover{
     color: white;
@@ -104,6 +105,7 @@ header{
     transform: scale(0.95)
 }
 .button:hover{
+    transition: all .5s ease;
     box-shadow: 0px 0px 10px -1px white;
 }
 .h-logotype{
@@ -394,6 +396,7 @@ margin-bottom: 74px;}
   color: #4e8dff;
   cursor:pointer;
   margin-bottom: 33px;
+  transition: all .5s ease;
 }
 .game-more4{
     color: #ff4e6c;
@@ -784,6 +787,7 @@ top: 26%;
 }
 .otz-grid-img1{
     margin-top: 20px;
+    transition: all .5s ease;
 }
 .otz-grid-img1:hover{
     opacity: 1;
@@ -935,6 +939,7 @@ footer{
 footer a{
     text-decoration: none;
     color: inherit;
+    transition: all .5s ease;
 }
 footer a:hover{
     color: white
@@ -960,6 +965,189 @@ footer a:hover{
     top: -20px;
     cursor: pointer;
 }
+.popup-promo
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    max-width: 100%;
+    min-width: 100%;
+    overflow: auto;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.19);
+    z-index: 10000;
+}
+.popup-promo-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 800px;
+    min-width: 800px;
+    height: 600px;
+    border-radius: 60px;
+    box-shadow: 0 16px 32px 0 #001528;
+    background-color: #4e8dff;
+    text-align: center
+}
+.promo-title
+{
+  font-family:"Avenir Next Cyr-Demi";
+  font-size: 42px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.76;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 72px;
+}
+.promo-text{
+width: 492px;
+  
+  font-family: "Avenir Next Cyr";
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+  margin-top: 78px;
+}
+.promo-button-soc{
+  font-family: "Avenir Next Cyr-Demi";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  width: 176px;
+  height: 64px;
+  box-shadow: 0 4px 56px 0 rgba(0, 213, 170, 0.55);
+  border: solid 1.5px rgba(255,255,255,0.4);
+  border-radius: 40px;
+  background-color: transparent;
+  margin: 0 auto;
+  outline: none;
+  margin-right: 32px;
+  cursor: pointer;
+  margin-top: 38px;
+  
+}
+.promo-button-soc:hover .cls-199{
+    fill: #00ff2f;
+    transition: all .5s ease;
+}
+.promo-button-soc:hover .cls-198{
+    stroke: #00ff2f;
+}
+.promo-button-soc:hover{
+    color: #00ff2f;
+    border: solid 1.5px rgba(0,197,36,0.4);
+    transition: all .5s ease;
+}
+.popup-soc-icon{
+    position: relative;
+    top: 5px;
+    margin-right: 13.5px;
+}
+.popup-soc-img{
+    position: relative;
+    top: 0px;
+    margin-right: 13.5px;
+    display: none;
+    margin-bottom: -10px;
+}
+.popup-soc-icon2{
+    position: relative;
+    top: 3px;
+    margin-right: 13.5px;
+}
+.promo-cross{
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    cursor: pointer;
+    transition: all .5s ease
+}
+.promo-cross:hover .cls-99{
+    transition: all .5s ease;
+    stroke: black;
+}
+.promo-button-get{
+    margin: 0 auto;
+    margin-top: 78px;
+}
+.popup-priz-text{
+    display: none;
+    margin-left: 185px;
+    margin-top: 71px;
+
+}
+.priz-text{
+    max-width: 355px;
+    min-width: 355px;
+    height: 53px;
+    font-family: "Avenir Next Cyr";
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    
+  }
+.priz-text a{
+    color:#a1c2ff;
+}
+.popup-priz-img{
+    margin-right: 27px;
+}
+.popup-priz-img:hover .cls-299{
+ fill: #00ff2f;
+ transition: fill .5s ease
+}
+.popup-promocode{
+  max-width: 384px;
+  min-width: 384px;
+  height: 70px;
+  border-radius: 15px;
+  background-color: rgba(49,111,222,0.4);
+  font-family: "Avenir Next Cyr-Demi";
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 3.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding-top:5px;
+  margin: 0 auto;
+  margin-top: 37px;
+  position: relative;
+  display: none;
+}
+.popup-promocode-img{
+    position: absolute;
+    left: 83%;
+    top: 30%;
+}
+.popup-promocode-img:hover .cls-399{
+    fill: #00ff2f;
+    transition: fill .5s ease;
+    cursor: pointer;
+   }
 @media(max-width: 1250px){
     .h-plat{
         display:none;
@@ -1057,6 +1245,25 @@ footer a:hover{
     }
 }
 @media(max-width: 1023px){
+    .popup-priz-img{
+        display: none;
+    }
+    .popup-promo-content{
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        transform: translate(0%,0%);
+        max-width: 100%;
+        min-width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+        box-shadow: 0 0px 0px 0 #001528;
+        background-color: #4e8dff;
+        text-align: center
+    }
+    .promo-title{
+        margin-top: 200px;
+    }
     .header,.games,.box,.best,footer,.soon,.otz,.oplata{
         max-width: 640px;
         min-width: 640px;
@@ -1158,6 +1365,10 @@ footer a:hover{
     }
 }
 @media(max-width: 767px){
+    
+    .promo-button-soc{
+        margin: 32px 32px 0 32px;
+    }
     .header{
         padding-top: 32px;
         grid-template-columns: 1fr;
@@ -1181,11 +1392,17 @@ footer a:hover{
     .top-play{
         min-width: 280px;
     }
-    .top-text{
+    .top-text,.promo-title,.promo-text{
         max-width: 80%;
         min-width: 80%;
         margin-right: auto;
         margin-left: auto;
+    }
+    .promo-cross{
+        left: 85%
+    }
+    .promo-title{
+        line-height: 1.5;
     }
     .games-title{
         text-align: center
@@ -1358,5 +1575,39 @@ footer a:hover{
     .oplata-last-descr,.oplata-last{
         text-align: center
     }
+    .popup-priz-text{
+        display: block;
+        max-width: 80%;
+        min-width: 80%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        height: auto;
+    }
+    
+    .priz-text{
+        max-width: 100%;
+        min-width: 100%;
+        text-align: center;
+        height: auto;
+    }
     
 }
+
+@media(min-width: 550px) and (max-width: 768px){
+    .promo-cross{
+        left: 90%
+    }
+}
+@media(max-width: 390px){
+   
+
+.popup-promocode{
+    display: block;
+    max-width: 95%;
+    min-width: 95%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+}}
