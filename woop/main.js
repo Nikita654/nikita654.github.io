@@ -55,6 +55,8 @@ if(window.screen.availWidth<768){
           loop: false,
           rewind: true,
           nav: false,
+          touchDrag:false,
+          
         });
         var owl1 = $(".owl-two");
         owl1.owlCarousel({
@@ -64,10 +66,17 @@ if(window.screen.availWidth<768){
           loop: false,
           rewind: true,
           nav: false,
+          touchDrag:false,
+          
         });
        
        
        
+      $('.otz').on({ 'touchstart' : function(){ owl.trigger("next.owl.carousel");
+      owl1.trigger("next.owl.carousel"); } });
+
+
+
         $(".otz-arrow-right").click(function(){
             owl.trigger("next.owl.carousel");
             owl1.trigger("next.owl.carousel");
