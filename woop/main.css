@@ -828,6 +828,7 @@ top: 26%;
 }
 .otz-grid .owl-stage-outer{
     overflow: visible;
+    height: 80px;
 }
 .otz-grid .owl-item{
     
@@ -1602,10 +1603,7 @@ width: 492px;
         max-width: 95%;
         text-align: center;
     }
-    .otz-grid{
-        max-width: 296px;
-        min-width: 296px;
-    }
+    
     .oplata-last-descr,.oplata-last{
         text-align: center
     }
