@@ -72,8 +72,7 @@ if(window.screen.availWidth<768){
        
        
        
-      $('.otz').on({ 'touchstart' : function(){ owl.trigger("next.owl.carousel");
-      owl1.trigger("next.owl.carousel"); } });
+     
 
 
 
@@ -88,4 +87,31 @@ if(window.screen.availWidth<768){
           });
         
 
+          let stars1=document.getElementsByClassName('.otz')[0]; 
+          var initialPoint;
+          var finalPoint;
+          if(stars1!=undefined){
+          stars1.addEventListener('touchstart', function(event) {
+          event.stopPropagation();
+          initialPoint=event.changedTouches[0];
+          }, false);
+          stars1.addEventListener('touchend', touchEnd, false);
+         };
   
+          function touchEnd(event){
+              event.stopPropagation();
+              stars1.removeEventListener('touchend',touchEnd , false);
+          finalPoint=event.changedTouches[0];
+          var xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
+          var yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
+          if (xAbs > 20 || yAbs > 20) {
+          if (xAbs > yAbs) {
+          if (finalPoint.pageX < initialPoint.pageX){
+            owl.trigger("next.owl.carousel");
+            owl1.trigger("next.owl.carousel");}
+          else{
+            owl.trigger("prev.owl.carousel");
+            owl1.trigger("prev.owl.carousel");}
+          }
+          };
+          };
