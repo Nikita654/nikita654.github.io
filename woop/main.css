@@ -101,12 +101,24 @@ header{
     outline: none;
     cursor:pointer;
 }
+.h-enter:hover{
+    background-color: #51e267;
+    border: solid 2px #51e267;
+    font-weight: bold;
+    color: #001428;
+}
+.game-play:hover{
+    background-color: #51e267;
+    border: solid 2px #51e267;
+    font-weight: bold;
+    color: #001428;
+    box-shadow: 0px 0px 10px rgba(0, 213, 170, 0.4);
+}
 .button:active{
     transform: scale(0.95)
 }
 .button:hover{
     transition: all .5s ease;
-    box-shadow: 0px 0px 10px -1px white;
 }
 .h-logotype{
     margin-top: 10px;
@@ -155,7 +167,7 @@ font-family:"Avenir Next Cyr-Demi";
     max-width: 44px;
     min-width: 44px;
     height: 44px;
-    margin: 20px 0 0 50px;
+    margin: 17px 0 0 21px;
 }
 
 .top-play-text{
@@ -178,6 +190,15 @@ letter-spacing: normal;
 text-align: center;
 color: #001428;
 cursor:pointer;
+}
+.top-bt:hover{
+    box-shadow: 0px 0px 10px rgba(0, 213, 170, 0.55);
+    
+
+}
+.top-play:hover{
+    box-shadow: 0px 15px 45px -15px #0f3561;
+
 }
 .top-bt-text{
     padding: 8px 0;
@@ -232,9 +253,7 @@ font-family:"Avenir Next Cyr";
     color: #6a8bc3;
 margin-bottom: 74px;}
 .games-game-wrapper{
-    max-width: 80%;
-    min-width: 80%;
-    margin: 0 auto;
+    margin: 0 40px 0 40px;
     text-align: center
 }
 .game-img{
@@ -247,16 +266,15 @@ margin-bottom: 74px;}
     margin-bottom: -17px;
 }
 .game-img4{
-    margin-bottom: -64px;
+    margin-bottom: -52px;
 }
-.game-imgM{
-    display: none;
-}
-.game-label3{
-    padding-bottom: 11px;
-}
+
 .game-label{
     display:flex;
+    margin-bottom: 24px;
+}
+.game-name{
+    margin-top: 0;
 }
 .game-label-sort{
     margin-left: auto;
@@ -284,12 +302,9 @@ margin-bottom: 74px;}
 }
 .game-label-sort2{
     position: relative;
-    top: 35px;
+    top: 33.5px;
 }
-.game-label-sort4{
-    position: relative;
-    top: 36px;
-}
+
 .game-label-sort0{
     padding: 8px 0 4px 0 ;
 }
@@ -304,7 +319,7 @@ margin-bottom: 74px;}
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
-  margin-left: 5px;
+  
   margin-bottom: 10px;
 }
 .game-sort
@@ -318,7 +333,7 @@ margin-bottom: 74px;}
   letter-spacing: normal;
   text-align: left;
   color: #6a8bc3;
-  margin-left: 5px;
+  
   margin-bottom: 36px;
 }
 .game-descr
@@ -334,7 +349,7 @@ margin-bottom: 74px;}
     letter-spacing: normal;
     text-align: left;
     color: #4e8dff;
-    margin-left: 5px;
+   
     margin-bottom: 32px;
 }
 .game-descr4{
@@ -350,7 +365,11 @@ margin-bottom: 74px;}
   letter-spacing: normal;
   text-align: left;
   color: #6a8bc3;
-  margin-bottom: 32px;
+  margin-bottom: 42px;
+ 
+}
+.game-feature1{
+    margin-bottom: 22px;
 }
 .game-play{
     background-color: transparent;
@@ -382,6 +401,26 @@ margin-bottom: 74px;}
     min-width: 100%;
     height: 1px;
     margin-bottom: 28px;
+}
+.game-img-icon  {
+   
+    position: relative;
+    left: -5px;
+}
+.game-img-icon2  path{
+    fill:#00FDFF;
+}
+.game-img-icon2  {
+    margin-bottom: -11px;
+    position: relative;
+    left: -15px;
+}
+
+.game-img-icon3 #Path_1034{
+   fill: #f55f23
+}
+.game-img-icon4  #Path_1011{
+    fill:rgb(74, 138, 250);
 }
 .game-more
 {
@@ -423,7 +462,7 @@ margin-bottom: 74px;}
     color: #051d37;
     margin-left: 13px;
     position: relative;
-    top: 22px
+    top: 1px
 }
 .game-status3{
     width: 42px;
@@ -570,6 +609,7 @@ top: 26%;
     width: 40px;
     height: 33px;
     background-color: #00d5aa;
+    font-family: "Avenir Next Cyr";
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
@@ -777,16 +817,23 @@ top: 26%;
     position: relative;
 }
 .otz-grid{
-    max-width: 496px;
-    min-width: 496px;
+    max-width: 80px;
+    min-width: 80px;
+    height: 80px;
     margin: 0 auto;
-    display: grid;
+    display: block;
     grid-template-columns: 104px 104px 144px 104px 40px;
     margin-top: 144px;
     margin-bottom: 15px;
 }
+.otz-grid .owl-stage-outer{
+    overflow: visible;
+}
+.otz-grid .owl-item{
+    
+}
+
 .otz-grid-img1{
-    margin-top: 20px;
     transition: all .5s ease;
 }
 .otz-grid-img1:hover{
@@ -846,12 +893,14 @@ top: 26%;
     left: 0;
     top: 50%;
     cursor: pointer;
+    z-index: 10000;
 }
 .otz-arrow-right{
     position: absolute;
     left: 97.4%;
     top: 50%;
     cursor: pointer;
+    z-index: 10000;
 }
 .otz-arrow-right:active{
     transform: scale(0.95)
@@ -1157,24 +1206,8 @@ width: 492px;
         min-width: 896px;
     }
     .games-grid{
+        transition: transform .5s ease;
         transform: translateX(-164px);
-    }
-    .game-img{
-        margin-bottom: -40px;
-    }
-    .game-img2{
-        margin-bottom: -51px;
-    }
-    .game-img3{
-        margin-bottom: -40px;
-    }
-    .game-img4{
-        margin-bottom: -52px;
-    }
-    .game-img,.game-img2,.game-img3,.game-img4{
-        display: none;}
-    .game-imgM{
-        display: block
     }
     .box-img{
         display: none;
@@ -1230,7 +1263,7 @@ width: 492px;
         margin-bottom: 0;
     }
     .lider-win{
-        margin-bottom: 88px;
+        margin-bottom: 188px;
     }
     .oplata-iteml,.otz-arrow-left,.otz-arrow-right{
     display: none;
@@ -1255,14 +1288,15 @@ width: 492px;
         transform: translate(0%,0%);
         max-width: 100%;
         min-width: 100%;
-        height: 100vh;
+        height: auto;
         border-radius: 0px;
         box-shadow: 0 0px 0px 0 #001528;
         background-color: #4e8dff;
-        text-align: center
+        text-align: center;
+        padding-bottom: 30vh;
     }
     .promo-title{
-        margin-top: 200px;
+        margin-top: 30vh;
     }
     .header,.games,.box,.best,footer,.soon,.otz,.oplata{
         max-width: 640px;
@@ -1374,10 +1408,10 @@ width: 492px;
         grid-template-columns: 1fr;
     }
     .header-back{
-        top: 70px;
-        max-width: 130%;
-        min-width: 130%;
-        left: -12%;
+        top: 100px;
+        max-width: 100%;
+        min-width: 100%;
+        left: 0%;
     }
     .top-btns{
         grid-template-columns: 1fr;
@@ -1489,8 +1523,8 @@ width: 492px;
             text-align: center;
         }
         .lider-number{
-        left: 29.5%;
-        top: 12%;
+        left: 66.5%;
+        top: 7%;
         }
         
         .lider-game {
@@ -1532,8 +1566,8 @@ width: 492px;
         }
         .liders-number{
             position: absolute;
-            left: 0%;
-            top: 0%;
+            left: 5%;
+            top: -18%;
             z-index: 100;
         }
         .liders-main{

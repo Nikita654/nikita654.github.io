@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="woop/owl.carousel.min.css">
 	<link rel="stylesheet" href="woop/main.css">
 	<title>WOOPcash</title>
 </head>
@@ -99,7 +100,8 @@
 		</button></div>
 	
       </section>
-      <img src="woop/img/top-back.png" alt="фон" class="header-back">
+	  
+	  <video class="header-back"  src="woop/mov_Woop_DESKTOP.mp4" autoplay autobuffer loop ></video>
 		<section class="top">
 			<h1 class="top-title">Выиграй деньги с<span class="top-title-name"> Woop!</span></h1>
 			<div class="top-btns">
@@ -121,20 +123,47 @@
 	 <section class="games">
 	 	<p class="games-title"><span class="top-text-count">Наши игры </span>  4</p>
 	 	<div class="games-grid">
-	 		<div class="games-game">
+	 		<div class="games-game" onmouseover="gamesLeftIn()" onmouseout="gamesLeftOut()" >
 	 			<img src="woop/img/game-back1.png" alt="фон первой игры" class="game-img">
-	 			<img src="woop/img/games-backM1.png" alt="фон первой игры" class="game-img  game-imgM">
+	 			
 	 			<div class="games-game-wrapper">
 	 			<div class="game-label">
-	 				<img src="woop/img/game1.png" alt="иконка первой игры" class="game-img-icon">
+					 <svg class="game-img-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+						<defs>
+						  <radialGradient id="radial-gradient" cx="0.299" cy="0.178" r="0.586" gradientTransform="matrix(0.619, 0.786, -0.786, 0.619, 0.254, -0.167)" gradientUnits="objectBoundingBox">
+							<stop offset="0" stop-color="#a6ec00"/>
+							<stop offset="1" stop-color="#5ca200"/>
+						  </radialGradient>
+						</defs>
+						<g id="Group_2960" data-name="Group 2960" transform="translate(6936.69 2422.041)">
+						  <ellipse id="Oval-1" cx="40" cy="40" rx="40" ry="40" transform="translate(-6936.69 -2422.041)" fill="url(#radial-gradient)"/>
+						  <g id="Group_2961" data-name="Group 2961" transform="translate(-6919 -2404)">
+							<g id="Group_2952" data-name="Group 2952" transform="translate(0 0)">
+							  <path id="Path_1091" data-name="Path 1091" d="M44.507,22.349l-6.648-4.155,3.712-6.983-7.835-.274-.277-7.9-6.922,3.68L22.346.006,18.191,6.654,11.208,2.941l-.274,7.835-7.9.277,3.68,6.922L0,22.167l6.648,4.155L2.939,33.305l7.835.274.277,7.9,6.922-3.68,4.191,6.707,4.155-6.648L33.3,41.574l.274-7.835,7.9-.277L37.8,26.541ZM31.055,31.219l-.213,6.095-5.446-2.9L22.164,39.59l-3.269-5.23L13.51,37.222l-.216-6.164L7.2,30.845l2.9-5.446L4.923,22.167l5.23-3.269L7.291,13.513l6.164-.216L13.668,7.2l5.446,2.9,3.232-5.172,3.269,5.23L31,7.294l.216,6.164,6.095.213-2.9,5.446,5.172,3.232-5.23,3.269L37.219,31Z" transform="translate(-0.003 -0.006)" fill="#fff"/>
+							</g>
+						  </g>
+						  <g id="Group_2962" data-name="Group 2962" transform="translate(-6909.16 -2394.16)">
+							<g id="Group_2954" data-name="Group 2954">
+							  <path id="Path_1092" data-name="Path 1092" d="M138.034,125.716l-3.7-2.309,2.078-3.909-4.355-.152-.155-4.424-3.848,2.045-2.346-3.754-2.309,3.7L119.5,114.83l-.152,4.355-4.424.155,2.045,3.848-3.754,2.346,3.7,2.309-2.078,3.909,4.355.152.155,4.424,3.848-2.045,2.346,3.754,2.309-3.7,3.909,2.078.152-4.355,4.424-.155-2.045-3.848Zm-5.97,3.734-2.684.094-.092,2.615-2.371-1.261-1.387,2.219-1.423-2.277-2.31,1.228-.094-2.684-2.615-.092,1.261-2.371-2.219-1.387,2.277-1.423-1.228-2.31,2.684-.094.092-2.615,2.371,1.261,1.387-2.219,1.423,2.277,2.31-1.228.094,2.684,2.615.092-1.261,2.371,2.219,1.387-2.277,1.423Z" transform="translate(-113.21 -113.213)" fill="#fff"/>
+							</g>
+						  </g>
+						  <ellipse id="Ellipse_69" data-name="Ellipse 69" cx="1.555" cy="1.555" rx="1.555" ry="1.555" transform="translate(-6882.108 -2367.624)" fill="#fff"/>
+						  <ellipse id="Ellipse_70" data-name="Ellipse 70" cx="1.555" cy="1.555" rx="1.555" ry="1.555" transform="translate(-6878.5 -2364.016)" fill="#fff"/>
+						  <ellipse id="Ellipse_68" data-name="Ellipse 68" cx="1.555" cy="1.555" rx="1.555" ry="1.555" transform="translate(-6877.5 -2404.016)" fill="#fff"/>
+						  <ellipse id="Ellipse_72" data-name="Ellipse 72" cx="1.555" cy="1.555" rx="1.555" ry="1.555" transform="translate(-6915.5 -2366.016)" fill="#fff"/>
+						  <ellipse id="Ellipse_73" data-name="Ellipse 73" cx="1.555" cy="1.555" rx="1.555" ry="1.555" transform="translate(-6918.108 -2403.624)" fill="#fff"/>
+						  <ellipse id="Ellipse_71" data-name="Ellipse 71" cx="1.555" cy="1.555" rx="1.555" ry="1.555" transform="translate(-6914.5 -2400.016)" fill="#fff"/>
+						</g>
+					  </svg>
+					  
 	 				<div class="game-label-sort">
-	 				<div class="game-label-sort0">PVE</div>
+	 				<div class="game-label-sort0">PvE</div>
 	 			</div>
 	 			</div>
 	 			<h2 class="game-name">Crash</h2>
 	 			<div class="game-sort">PVE, Карточная игра</div>
 	 			<div class="game-descr">Видеохостинговый сайт, предоставляющий пользователям услуги хранения, доставки и показа видео!</div>
-	 			<div class="game-feature">
+	 			<div class="game-feature game-feature1">
 	 				<span class="top-text-count">29</span> игроков</br> сейчас онлайн 
 	 			</div>
 	 			<div class="game-feature">
@@ -153,18 +182,91 @@
 
 	 		<div class="games-game">
 	 			<img src="woop/img/game-back2.png" alt="фон первой игры" class="game-img2">
-	 			<img src="woop/img/games-backM2.png" alt="фон первой игры" class="game-img game-img2 game-imgM">
+	 			
 	 			<div class="games-game-wrapper">
 	 			<div class="game-label">
-	 				<img src="woop/img/game2.png" alt="иконка первой игры" class="game-img-icon">
+					 <svg  class="game-img-icon game-img-icon2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101.611" height="101.603" viewBox="0 0 101.611 101.603">
+						<defs>
+						  <radialGradient id="radial-gradient" cx="0.088" cy="0.299" r="0.533" gradientTransform="translate(0 -0.003) scale(1 1.009)" gradientUnits="objectBoundingBox">
+							<stop offset="0" stop-color="#00fdff"/>
+							<stop offset="1" stop-color="#00a9ab"/>
+						  </radialGradient>
+						  <filter id="Path_1002" x="9.173" y="9.185" width="83.246" height="83.247" filterUnits="userSpaceOnUse">
+							<feOffset input="SourceAlpha"/>
+							<feGaussianBlur stdDeviation="9.037" result="blur"/>
+							<feFlood flood-color="#00d0d2" flood-opacity="0.502"/>
+							<feComposite operator="in" in2="blur"/>
+							<feComposite in="SourceGraphic"/>
+						  </filter>
+						  <filter id="Path_1003" x="33.332" y="0.014" width="68.279" height="68.279" filterUnits="userSpaceOnUse">
+							<feOffset input="SourceAlpha"/>
+							<feGaussianBlur stdDeviation="9.037" result="blur-2"/>
+							<feFlood flood-color="#00d0d2" flood-opacity="0.502"/>
+							<feComposite operator="in" in2="blur-2"/>
+							<feComposite in="SourceGraphic"/>
+						  </filter>
+						  <filter id="Path_1004" x="0" y="33.323" width="68.279" height="68.279" filterUnits="userSpaceOnUse">
+							<feOffset input="SourceAlpha"/>
+							<feGaussianBlur stdDeviation="9.037" result="blur-3"/>
+							<feFlood flood-color="#00d0d2" flood-opacity="0.502"/>
+							<feComposite operator="in" in2="blur-3"/>
+							<feComposite in="SourceGraphic"/>
+						  </filter>
+						  <filter id="Path_1007" x="0.012" y="0" width="68.279" height="68.279" filterUnits="userSpaceOnUse">
+							<feOffset input="SourceAlpha"/>
+							<feGaussianBlur stdDeviation="9.037" result="blur-4"/>
+							<feFlood flood-color="#00d0d2" flood-opacity="0.502"/>
+							<feComposite operator="in" in2="blur-4"/>
+							<feComposite in="SourceGraphic"/>
+						  </filter>
+						  <filter id="Path_1008" x="33.306" y="33.316" width="68.279" height="68.279" filterUnits="userSpaceOnUse">
+							<feOffset input="SourceAlpha"/>
+							<feGaussianBlur stdDeviation="9.037" result="blur-5"/>
+							<feFlood flood-color="#00d0d2" flood-opacity="0.502"/>
+							<feComposite operator="in" in2="blur-5"/>
+							<feComposite in="SourceGraphic"/>
+						  </filter>
+						</defs>
+						<g id="Group_2758" data-name="Group 2758" transform="translate(11939.598 3967.427)">
+						  <path id="Path_1000" data-name="Path 1000" d="M59.207,97.24a40,40,0,1,0-40-40A40,40,0,0,0,59.207,97.24Z" transform="translate(-11948.421 -3974.281)" fill="url(#radial-gradient)"/>
+						  <g transform="matrix(1, 0, 0, 1, -11939.6, -3967.43)" filter="url(#Path_1002)">
+							<path id="Path_1002-2" data-name="Path 1002" d="M8.262,16.524A8.262,8.262,0,1,0,2.416,14.1a8.262,8.262,0,0,0,5.846,2.424Z" transform="translate(50.8 39.12) rotate(45)" fill="none" stroke="#fff" stroke-width="4"/>
+						  </g>
+						  <g id="Group_2743" data-name="Group 2743" transform="translate(-11872.126 -3938.888) rotate(45)">
+							<g transform="matrix(0.71, -0.71, 0.71, 0.71, -67.89, 27.53)" filter="url(#Path_1003)">
+							  <path id="Path_1003-2" data-name="Path 1003" d="M3.97,7.941A3.97,3.97,0,1,0,0,3.97a3.97,3.97,0,0,0,3.97,3.97Z" transform="translate(67.47 28.54) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+							</g>
+						  </g>
+						  <g id="Group_2744" data-name="Group 2744" transform="translate(-11905.458 -3905.579) rotate(45)">
+							<g transform="matrix(0.71, -0.71, 0.71, 0.71, -67.87, -19.59)" filter="url(#Path_1004)">
+							  <path id="Path_1004-2" data-name="Path 1004" d="M3.97,7.941A3.97,3.97,0,1,0,0,3.97a3.97,3.97,0,0,0,3.97,3.97Z" transform="translate(34.14 61.85) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+							</g>
+						  </g>
+						  <path id="Path_1005" data-name="Path 1005" d="M0,0V11.184" transform="translate(-11875.035 -3931.219) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+						  <path id="Path_1006" data-name="Path 1006" d="M0,0V11.676" transform="translate(-11894.639 -3911.616) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+						  <g id="Group_2746" data-name="Group 2746" transform="translate(-11911.062 -3933.287) rotate(-45)">
+							<g transform="matrix(0.71, 0.71, -0.71, 0.71, 3.96, -44.32)" filter="url(#Path_1007)">
+							  <path id="Path_1007-2" data-name="Path 1007" d="M3.97,7.941A3.97,3.97,0,1,0,0,3.97a3.97,3.97,0,0,0,3.97,3.97Z" transform="translate(28.54 34.14) rotate(-45)" fill="none" stroke="#fff" stroke-width="2"/>
+							</g>
+						  </g>
+						  <g id="Group_2747" data-name="Group 2747" transform="translate(-11877.768 -3899.971) rotate(-45)">
+							<g transform="matrix(0.71, 0.71, -0.71, 0.71, 3.98, -91.42)" filter="url(#Path_1008)">
+							  <path id="Path_1008-2" data-name="Path 1008" d="M3.97,7.941A3.97,3.97,0,1,0,0,3.97a3.97,3.97,0,0,0,3.97,3.97Z" transform="translate(61.83 67.46) rotate(-45)" fill="none" stroke="#fff" stroke-width="2"/>
+							</g>
+						  </g>
+						  <path id="Path_1009" data-name="Path 1009" d="M0,0V11.644" transform="translate(-11902.605 -3930.431) rotate(-45)" fill="none" stroke="#fff" stroke-width="2"/>
+						  <path id="Path_1010" data-name="Path 1010" d="M0,0V11.285" transform="translate(-11882.901 -3910.728) rotate(-45)" fill="none" stroke="#fff" stroke-width="2"/>
+						</g>
+					  </svg>
+					  
 	 				<div class="game-label-sort game-label-sort2">
-	 				<div class="game-label-sort0">PVE</div>
+	 				<div class="game-label-sort0">PvE</div>
 	 			</div>
 	 			</div>
 	 			<h2 class="game-name">Double</h2>
 	 			<div class="game-sort">PVE, Карточная игра</div>
 	 			<div class="game-descr">Видеохостинговый сайт, предоставляющий пользователям услуги хранения, доставки и показа видео!</div>
-	 			<div class="game-feature">
+	 			<div class="game-feature game-feature1">
 	 				<span class="top-text-count">15</span> игроков</br> сейчас онлайн 
 	 			</div>
 	 			<div class="game-feature">
@@ -184,12 +286,31 @@
 
 	 		<div class="games-game">
 	 			<img src="woop/img/game-back3.png" alt="фон первой игры" class="game-img3">
-	 			<img src="woop/img/games-backM3.png" alt="фон первой игры" class="game-img game-img3 game-imgM">
+	 			
 	 			<div class="games-game-wrapper">
 	 			<div class="game-label game-label3">
-	 				<img src="woop/img/game3.png" alt="иконка первой игры" class="game-img-icon">
+
+					  <svg class="game-img-icon game-img-icon3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+						
+								
+										
+									 
+						
+						
+						<g id="Group_2860" data-name="Group 2860" transform="translate(-1737 -1533)">
+						  <path id="Path_1034" data-name="Path 1034" d="M48.2,90.5a40,40,0,1,0-40-40A39.9,39.9,0,0,0,48.2,90.5Z" transform="translate(1728.8 1522.5)" fill="url(#radial-gradient)"/>
+						  <path id="Vector" d="M53.532,47.119a16.707,16.707,0,0,1-3.007,9.773,18.141,18.141,0,0,1-14.534,7.768,18.314,18.314,0,0,1-8.27-2,17.41,17.41,0,0,1-6.515-6.265A18.757,18.757,0,0,1,18.7,47.37c0-18.795,18.043-29.319,18.544-29.57,0,.251-1.5,6.265,1,8.771s6.014-.752,6.014-.752,9.272,9.021,9.272,21.3ZM45.764,51.63A12.9,12.9,0,0,0,41.5,41.606s-3.007,4.009-4.26,2.506c-1.5-1.5-2.506-8.771-2.506-8.771a21.251,21.251,0,0,0-8.27,16.539,9.785,9.785,0,0,0,9.773,9.773C41.755,61.654,45.764,56.893,45.764,51.63Z" transform="translate(1740.776 1530.041)" fill="#fff"/>
+						</g>
+						<radialGradient id="radial-gradient" cx="0.15" cy="0.293" r="0.702" gradientTransform="matrix(0.855, 0.518, 0.519, -0.856, -0.13, 0.466)" gradientUnits="objectBoundingBox">
+								<stop offset="0" stop-color="#f5a623"/>
+								<stop offset="1" stop-color="#f32b20"/>
+							  </radialGradient>
+					  </svg>
+					  
+					  
+					  
 	 				<div class="game-label-sort">
-	 				<div class="game-label-sort0">PVE</div>
+	 				<div class="game-label-sort0">PvE</div>
 	 			</div>
 	 			</div>
 	 			<div class="game-title">
@@ -198,7 +319,7 @@
 	 			</div>
 	 			<div class="game-sort">PVE, Карточная игра</div>
 	 			<div class="game-descr">Видеохостинговый сайт, предоставляющий пользователям услуги хранения, доставки и показа видео!</div>
-	 			<div class="game-feature">
+	 			<div class="game-feature game-feature1">
 	 				<span class="top-text-count">42</span> игроков</br> сейчас онлайн 
 	 			</div>
 	 			<div class="game-feature">
@@ -213,14 +334,47 @@
 	 		</div>
 
 
-	 		<div class="games-game">
+	 		<div class="games-game" onmouseover="gamesRightIn()" onmouseout="gamesRightOut()">
 	 			<img src="woop/img/game-back4.png" alt="фон первой игры" class="game-img4">
-	 			<img src="woop/img/games-backM4.png" alt="фон первой игры" class="game-img game-img4 game-imgM">
+	 			
 	 			<div class="games-game-wrapper">
 	 			<div class="game-label">
-	 				<img src="woop/img/game4.png" alt="иконка первой игры" class="game-img-icon">
+					 
+					 <svg class="game-img-icon game-img-icon4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+						<defs>
+						  <radialGradient id="radial-gradient" cx="0.088" cy="0.299" r="0.533" gradientTransform="translate(0 -0.003) scale(1 1.009)" gradientUnits="objectBoundingBox">
+							<stop offset="0" stop-color="#9bbfff"/>
+							<stop offset="1" stop-color="#1d66e9"/>
+						  </radialGradient>
+						</defs>
+						<g id="Group_2897" data-name="Group 2897" transform="translate(5320 2359)">
+						  <path id="Path_1011" data-name="Path 1011" d="M59.207,97.24a40,40,0,1,0-40-40A40,40,0,0,0,59.207,97.24Z" transform="translate(-5339.207 -2376.24)" fill="url(#radial-gradient)"/>
+						  <g id="Group_2899" data-name="Group 2899" transform="translate(34 69)">
+							<g id="crown" transform="translate(-5333 -2473.599)">
+							  <g id="Group_2897-2" data-name="Group 2897" transform="translate(0 76)">
+								<path id="Path_1044" data-name="Path 1044" d="M38.714,81.733a1.533,1.533,0,0,0-1.666-.212l-8.39,4.085-7.873-9.077a1.533,1.533,0,0,0-2.317,0l-7.873,9.077L2.2,81.521A1.533,1.533,0,0,0,.066,83.346l5.826,19.166A1.533,1.533,0,0,0,7.36,103.6H31.892a1.533,1.533,0,0,0,1.467-1.087l5.826-19.166A1.533,1.533,0,0,0,38.714,81.733Zm-7.958,18.8H8.5L4.023,85.817l6.288,3.061A1.533,1.533,0,0,0,12.14,88.5l7.486-8.631L27.112,88.5a1.533,1.533,0,0,0,1.829.374l6.288-3.061Z" transform="translate(0 -76)" fill="#fff" stroke="#fff" stroke-width="1"/>
+							  </g>
+							</g>
+							<g id="Group_2898" data-name="Group 2898">
+							  <g id="Ellipse_45" data-name="Ellipse 45" transform="translate(-5340 -2401)" fill="none" stroke="#fff" stroke-width="2">
+								<circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+								<circle cx="3.5" cy="3.5" r="2.5" fill="none"/>
+							  </g>
+							  <g id="Ellipse_46" data-name="Ellipse 46" transform="translate(-5318 -2410)" fill="none" stroke="#fff" stroke-width="2">
+								<circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+								<circle cx="4.5" cy="4.5" r="3.5" fill="none"/>
+							  </g>
+							  <g id="Ellipse_47" data-name="Ellipse 47" transform="translate(-5294 -2400)" fill="none" stroke="#fff" stroke-width="2">
+								<circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+								<circle cx="3.5" cy="3.5" r="2.5" fill="none"/>
+							  </g>
+							</g>
+						  </g>
+						</g>
+					  </svg>
+					  
 	 				<div class="game-label-sort game-label-sort4">
-	 				<div class="game-label-sort0">PVE</div>
+	 				<div class="game-label-sort0">PvP</div>
 	 			</div>
 	 			</div>
 	 			<div class="game-title">
@@ -409,18 +563,49 @@ Visa, MasterCard, Qiwi, Яндекс.Деньги, Bitcoin</p>
 			</div>
 	 </section>
 	 <section class="otz">
-	 	<div class="otz-grid">
-	 		<img src="woop/img/otz3.png" alt="Аватарка пользователя" class="otz-grid-img otz-grid-img1 otz-grid-imgb">
-	 		<img src="woop/img/otz1.png" alt="Аватарка пользователя" class="otz-grid-img otz-grid-img1 otz-grid-imgc">
-	 		<img src="woop/img/liders1.png" alt="Аватарка пользователя" class="otz-grid-img">
-	 		<img src="woop/img/otz2.png" alt="Аватарка пользователя" class="otz-grid-img otz-grid-img1 otz-grid-imgc">
-	 		<img src="woop/img/otz4.png" alt="Аватарка пользователя" class="otz-grid-img otz-grid-img1 otz-grid-imgb">
-	 	</div>
-	 	<div class="otz-name">Пользователь</div>
+	 	<div class="otz-grid owl-carousel owl-two owl-theme">
+			<div>
+	 		<img src="woop/img/liders3.png" alt="Аватарка пользователя" class="otz-grid-img otz-grid-img1 otz-grid-imgb">
+		</div><div>
+			 <img src="woop/img/otz7.png" alt="Аватарка пользователя" class="otz-grid-img otz-grid-img1 otz-grid-imgc">
+			</div><div>
+			 <img src="woop/img/liders1.png" alt="Аватарка пользователя" class="otz-grid-img">
+			</div><div>
+			 <img src="woop/img/liders2.png" alt="Аватарка пользователя" class="otz-grid-img otz-grid-img1 otz-grid-imgc">
+			</div><div>
+			 <img src="woop/img/liders0.png" alt="Аватарка пользователя" class="otz-grid-img otz-grid-img1 otz-grid-imgb">
+		</div></div>
+		 <div class="owl-carousel owl-one owl-theme">
+				<div class="owl-carousel-item">
+	 	<div class="otz-name">Пользователь1</div>
 	 	<div class="otz-status">оставил отзыв 2 дня назад</div>
-	 	<div class="otz-text">“Softline является примером настоящего сотрудничества, направленного на достижение взаимного успеха, и мы рады вручить им награду  «Партнер года» за безупречное качество услуг и высокие продажи продуктов Veeam в 2018 году.”</div>
-   <img src="woop/img/arrow-left.png" alt="Предыдущий" class="otz-arrow-left">
-    <img src="woop/img/arrow-right.png" alt="Следующий" class="otz-arrow-right">
+		 <div class="otz-text">“Softline является примером настоящего сотрудничества, направленного на достижение взаимного успеха, и мы рады вручить им награду  «Партнер года» за безупречное качество услуг и высокие продажи продуктов Veeam в 2018 году.”</div>
+	</div>
+	<div class="owl-carousel-item">
+			<div class="otz-name">Пользователь2</div>
+			<div class="otz-status">оставил отзыв 2 дня назад</div>
+			<div class="otz-text">“Softline является примером настоящего сотрудничества, направленного на достижение взаимного успеха, и мы рады вручить им награду  «Партнер года» за безупречное качество услуг и высокие продажи продуктов Veeam в 2018 году.”</div>
+	   </div>
+	   <div class="owl-carousel-item">
+			<div class="otz-name">Пользователь3</div>
+			<div class="otz-status">оставил отзыв 2 дня назад</div>
+			<div class="otz-text">“Softline является примером настоящего сотрудничества, направленного на достижение взаимного успеха, и мы рады вручить им награду  «Партнер года» за безупречное качество услуг и высокие продажи продуктов Veeam в 2018 году.”</div>
+	   </div>
+	   <div class="owl-carousel-item">
+			<div class="otz-name">Пользователь4</div>
+			<div class="otz-status">оставил отзыв 2 дня назад</div>
+			<div class="otz-text">“Softline является примером настоящего сотрудничества, направленного на достижение взаимного успеха, и мы рады вручить им награду  «Партнер года» за безупречное качество услуг и высокие продажи продуктов Veeam в 2018 году.”</div>
+	   </div>
+	   <div class="owl-carousel-item">
+			<div class="otz-name">Пользователь5</div>
+			<div class="otz-status">оставил отзыв 2 дня назад</div>
+			<div class="otz-text">“Softline является примером настоящего сотрудничества, направленного на достижение взаимного успеха, и мы рады вручить им награду  «Партнер года» за безупречное качество услуг и высокие продажи продуктов Veeam в 2018 году.”</div>
+	   </div>
+</div>
+<img src="woop/img/arrow-left.png" alt="Предыдущий" class="otz-arrow-left">
+<img src="woop/img/arrow-right.png" alt="Следующий" class="otz-arrow-right">
+   
+    
 	 </section>
 	 <section class="soon">
 	 	<div class="soon-label">Скоро</div>
@@ -534,7 +719,7 @@ Visa, MasterCard, Qiwi, Яндекс.Деньги, Bitcoin</p>
 			<a href="#"> Помощь</a>
 			<a href="#">Блог</a>
 		</div>
-		<img src="woop/img/foot-logo.png" alt="Логотип внизу" class="footer-logo">
+		<img src="woop/img/foot-logo.svg" alt="Логотип внизу" class="footer-logo">
 	</footer>
 
 
@@ -747,6 +932,8 @@ Visa, MasterCard, Qiwi, Яндекс.Деньги, Bitcoin</p>
 			</div>
 		</section>
 	</section>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+	<script src="woop/owl.carousel.js"></script>
 	<script src="woop/main.js" type="text/javascript"></script>
 </body>
 </html>

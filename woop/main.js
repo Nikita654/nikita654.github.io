@@ -24,3 +24,59 @@ function getpromo(a){
    };
    
 }
+function gamesLeftIn(){
+    if(window.screen.availWidth<1250&&window.screen.availWidth>1023){
+    let games=document.getElementsByClassName("games-grid")[0];
+    games.style.transform="translateX(0)";}
+}
+function gamesLeftOut(){
+    if(window.screen.availWidth<1250&&window.screen.availWidth>1023){
+    let games=document.getElementsByClassName("games-grid")[0];
+    games.style.transform="translateX(-164px)";}
+}
+function gamesRightIn(){
+    if(window.screen.availWidth<1250&&window.screen.availWidth>1023){
+    let games=document.getElementsByClassName("games-grid")[0];
+    games.style.transform="translateX(-328px)";}
+}
+function gamesRightOut(){
+    if(window.screen.availWidth<1250&&window.screen.availWidth>1023){
+    let games=document.getElementsByClassName("games-grid")[0];
+    games.style.transform="translateX(-164px)";}
+}
+if(window.screen.availWidth<768){
+    let video=document.getElementsByTagName("video")[0];
+    video.src="woop/mov_Woop_MOBILE.mp4"}
+
+    var owl = $(".owl-one");
+        owl.owlCarousel({
+          items: 1,
+          margin: 0,
+          loop: false,
+          rewind: true,
+          nav: false,
+        });
+        var owl1 = $(".owl-two");
+        owl1.owlCarousel({
+          items: 1,
+          margin: 64,
+          startPosition:2,
+          loop: false,
+          rewind: true,
+          nav: false,
+        });
+       
+       
+       
+        $(".otz-arrow-right").click(function(){
+            owl.trigger("next.owl.carousel");
+            owl1.trigger("next.owl.carousel");
+          });
+           
+          $(".otz-arrow-left").click(function(){
+            owl.trigger("prev.owl.carousel");
+            owl1.trigger("prev.owl.carousel");
+          });
+        
+
+  
