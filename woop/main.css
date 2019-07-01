@@ -1,6 +1,10 @@
 @import url(normalize.css);
 @font-face{font-family:"Avenir Next Cyr-Demi";src:url("/woop/fonts/AvenirNextCyrDemi.woff") format("woff")}
 @font-face{font-family:"Avenir Next Cyr";src:url("/woop/fonts/AvenirNextCyr.woff") format("woff")}
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     max-width: 100%;
     overflow: hidden;
@@ -605,7 +609,7 @@ top: 26%;
 .lider-number{
     position: absolute;
     left:67%;
-    top: 7%;
+    top: 6%;
     width: 40px;
     height: 33px;
     background-color: #00d5aa;
@@ -1202,10 +1206,16 @@ width: 492px;
     .h-plat{
         display:none;
     }
+    .top {
+        padding-top: 52%;
+    }
     .header,.games,.box,.best,footer,.soon,.otz,.oplata{
         max-width: 896px;
         min-width: 896px;
     }
+    .header-back {
+        top: 30px;
+       }
     .games-grid{
         transition: transform .5s ease;
         transform: translateX(-164px);
