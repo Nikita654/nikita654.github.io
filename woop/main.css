@@ -1543,7 +1543,7 @@ width: 492px;
             margin-bottom: 26px;
         }
         .otz-grid-imgb{
-        display: none;}
+        display: block;}
         .otz-grid {
             grid-template-columns: 108px 148px 40px;}
             .soon-grid
