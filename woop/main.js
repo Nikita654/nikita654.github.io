@@ -87,7 +87,8 @@ if(window.screen.availWidth<768){
           });
         
 
-          let stars1=document.getElementsByClassName('.otz')[0]; 
+          let stars1=document.getElementsByClassName('otz')[0]; 
+          
           var initialPoint;
           var finalPoint;
           if(stars1!=undefined){
@@ -107,6 +108,7 @@ if(window.screen.availWidth<768){
           if (xAbs > 20 || yAbs > 20) {
           if (xAbs > yAbs) {
           if (finalPoint.pageX < initialPoint.pageX){
+              
             owl.trigger("next.owl.carousel");
             owl1.trigger("next.owl.carousel");}
           else{
@@ -114,4 +116,7 @@ if(window.screen.availWidth<768){
             owl1.trigger("prev.owl.carousel");}
           }
           };
+          setTimeout(()=>{
+            stars1.addEventListener('touchend', touchEnd, false);
+        },500)
           };
