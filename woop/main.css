@@ -121,7 +121,7 @@ header{
 .button:active{
     transform: scale(0.95)
 }
-.button:hover{
+.button{
     transition: all .5s ease;
 }
 .h-logotype{
@@ -175,7 +175,7 @@ font-family:"Avenir Next Cyr-Demi";
 }
 
 .top-play-text{
-    margin: 8px 0 8px 20px;
+    margin: 6px 0 6px 20px;
 }
 .top-bt
 {
@@ -247,7 +247,7 @@ font-family:"Avenir Next Cyr";
 
 }
 .games-title{
-    font-family:"Avenir Next Cyr";
+    font-family:"Avenir Next Cyr-Demi";
     font-size: 24px;
     font-weight: normal;
     font-style: normal;
@@ -310,7 +310,7 @@ margin-bottom: 74px;}
 }
 
 .game-label-sort0{
-    padding: 8px 0 4px 0 ;
+    padding: 6px 0 4px 0 ;
 }
 .game-name
 {
@@ -413,6 +413,11 @@ margin-bottom: 74px;}
 }
 .game-img-icon2  path{
     fill:#00FDFF;
+    box-shadow: 0 0 10px rgba(0,253,255, 0.6)
+}
+.game-img-icon01 ellipse{
+    fill:#5ca200;
+    box-shadow: 0 0 10px rgba(92,162,0, 0.6);
 }
 .game-img-icon2  {
     margin-bottom: -11px;
@@ -421,10 +426,12 @@ margin-bottom: 74px;}
 }
 
 .game-img-icon3 #Path_1034{
-   fill: #f55f23
+   fill: #f55f23;
+   box-shadow: 0 0 10px rgba(245,95,35, 0.6)
 }
 .game-img-icon4  #Path_1011{
     fill:rgb(74, 138, 250);
+    box-shadow: 0 0 10px rgba(74, 138, 250, 0.6)
 }
 .game-more
 {
@@ -660,6 +667,7 @@ top: 26%;
     margin-left: auto;
 }
 .liders-number{
+    font-family:"Avenir Next Cyr";
     width: 40px;
     height: 33px;
     background-color: #00d5aa;
@@ -1028,7 +1036,7 @@ footer a:hover{
     max-width: 100%;
     min-width: 100%;
     overflow: auto;
-    display: block;
+    display: none;
     background-color: rgba(0, 0, 0, 0.19);
     z-index: 10000;
 }
@@ -1094,10 +1102,12 @@ width: 492px;
   margin-right: 32px;
   cursor: pointer;
   margin-top: 38px;
-  
+  transition: all .5s ease;
 }
 .promo-button-soc:hover .cls-199{
     fill: #00ff2f;
+}
+.promo-button-soc  .cls-199{
     transition: all .5s ease;
 }
 .promo-button-soc:hover .cls-198{
@@ -1106,7 +1116,6 @@ width: 492px;
 .promo-button-soc:hover{
     color: #00ff2f;
     border: solid 1.5px rgba(0,197,36,0.4);
-    transition: all .5s ease;
 }
 .popup-soc-icon{
     position: relative;
@@ -1133,8 +1142,11 @@ width: 492px;
     transition: all .5s ease
 }
 .promo-cross:hover .cls-99{
-    transition: all .5s ease;
+    
     stroke: black;
+}
+.promo-cross .cls-99{
+    transition: all .5s ease
 }
 .promo-button-get{
     margin: 0 auto;
@@ -1169,8 +1181,10 @@ width: 492px;
 }
 .popup-priz-img:hover .cls-299{
  fill: #00ff2f;
- transition: fill .5s ease
 }
+.popup-priz-img .cls-299{
+    transition: fill .5s ease
+   }
 .popup-promocode{
   max-width: 384px;
   min-width: 384px;
@@ -1199,6 +1213,8 @@ width: 492px;
 }
 .popup-promocode-img:hover .cls-399{
     fill: #00ff2f;
+   }
+   .popup-promocode-img .cls-399{
     transition: fill .5s ease;
     cursor: pointer;
    }

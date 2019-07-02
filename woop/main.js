@@ -2,6 +2,10 @@ function closePopup(){
     let popup=document.getElementsByClassName("popup-promo")[0];
     popup.style.display="none";
 }
+function openPopup(){
+  let popup=document.getElementsByClassName("popup-promo")[0];
+  popup.style.display="block";
+}
 function getsubpromo(a){
     let svg=a.attributes["data-svg"].value;
     let icon=document.getElementsByClassName("popup-soc-icon")[Number(svg)];
@@ -9,6 +13,7 @@ function getsubpromo(a){
     icon.style.display="none";
     ok.style.display="inline-block";
     let popup=document.getElementsByClassName("popup-promo")[0];
+    a.style.border="solid 1.5px #51e267";
     popup.attributes["data-status"].value=1;
 }
 function getpromo(a){
