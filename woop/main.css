@@ -40,6 +40,10 @@ header{
     grid-template-columns: 1fr 1fr;
 
 }
+.h-right{
+    grid-template-columns: 1fr 212px;
+
+}
 .h-left{
     grid-template-columns: 4fr 6fr;
 }
@@ -50,7 +54,7 @@ header{
     height: 8px;
     position: relative;
     top: 34px;
-    margin: 0 72px 0 10px;
+    margin: 0 68px 0 10px;
     cursor:pointer;
 }
 .h-lang,.h-plat{
@@ -104,6 +108,7 @@ header{
     margin-top: 10px;
     outline: none;
     cursor:pointer;
+    margin-left: 4px;
 }
 .h-enter:hover{
     background-color: #51e267;
@@ -224,6 +229,7 @@ cursor:pointer;
     height: auto;
     z-index: -1;
 }
+
 .top-text
 {
     margin-top: 60px;
@@ -842,18 +848,21 @@ top: 26%;
     overflow: visible;
     height: 80px;
 }
-.otz-grid .owl-item{
-    
+.otz-grid .active img{
+    opacity: 1
 }
 
 .otz-grid-img1{
     transition: all .5s ease;
 }
-.otz-grid-img1:hover{
+.otz-grid-img:hover{
     opacity: 1;
 }
 .otz-grid-img{
     cursor: pointer;
+    opacity: 0.4;
+    box-shadow: 0 0 64px 0 rgba(0, 213, 170, 0.35);
+    transition: all .5s ease;
 }
 .otz-name{
     font-family:"Avenir Next Cyr";
@@ -893,12 +902,9 @@ top: 26%;
     color: #6a8bc3;
 }
 .otz-grid-imgc{
-    
-    opacity: 0.65;
     box-shadow: 0 0 64px 0 rgba(0, 213, 170, 0.35);
 }
 .otz-grid-imgb{
-    opacity: 0.2;
     box-shadow: 0 0 64px 0 rgba(0, 213, 170, 0.35);
 }
 .otz-arrow-left{

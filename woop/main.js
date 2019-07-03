@@ -49,7 +49,7 @@ function gamesRightOut(){
     let games=document.getElementsByClassName("games-grid")[0];
     games.style.transform="translateX(-164px)";}
 }
-if(window.screen.availWidth<768){
+if(window.screen.availWidth<720){
     let video=document.getElementsByTagName("video")[0];
     video.src="woop/mov_Woop_MOBILE.mp4"}
 
@@ -61,7 +61,8 @@ if(window.screen.availWidth<768){
           rewind: true,
           nav: false,
           touchDrag:false,
-          
+          startPosition:2,
+          mouseDrag:false,
         });
         var owl1 = $(".owl-two");
         owl1.owlCarousel({
@@ -69,10 +70,11 @@ if(window.screen.availWidth<768){
           margin: 64,
           startPosition:2,
           loop: false,
-          rewind: true,
+          rewind:true,
           nav: false,
           touchDrag:false,
-          
+          freeDrag:  true,
+          mouseDrag:false,
         });
        
        
@@ -80,7 +82,10 @@ if(window.screen.availWidth<768){
      
 
 
-
+        function changePos(a){
+          owl.trigger('to.owl.carousel', a, 500);
+          owl1.trigger('to.owl.carousel', a, 500);
+        }
         $(".otz-arrow-right").click(function(){
             owl.trigger("next.owl.carousel");
             owl1.trigger("next.owl.carousel");
