@@ -633,7 +633,7 @@ top: 26%;
 .lider-number{
     position: absolute;
     left:67%;
-    top: 6%;
+    top: 8%;
     width: 40px;
     height: 33px;
     background-color: #00d5aa;
@@ -1327,6 +1327,11 @@ width: 492px;
     .popup-priz-img{
         display: none;
     }
+    .lider-img{
+        height: 283px;
+        position: relative;
+        top: 20px
+    }
     .popup-promo-content{
         position: absolute;
         left: 0%;
@@ -1429,7 +1434,7 @@ width: 492px;
     }
     .lider-number{
     left: 29.5%;
-    top: 12%;
+    top: 14%;
     }
     .lider-game-img{
         max-width: 40px;
@@ -1573,7 +1578,7 @@ width: 492px;
         }
         .lider-number{
         left: 66.5%;
-        top: 7%;
+        top: 8%;
         }
         
         .lider-game {
