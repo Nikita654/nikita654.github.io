@@ -99,7 +99,7 @@ if(window.screen.availWidth<720){
 function changePositionI(){
   let stage=document.getElementsByClassName("owl-stage")[0];
   stage.classList.remove("owl-stage")
-  if(window.screen.availWidth<768){
+  if(window.screen.availWidth<657){
     stage.classList.add("owl-stage")
   }
 
