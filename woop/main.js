@@ -63,7 +63,7 @@ function gamesRightOut(){
     games.style.transform="translateX(-164px)";}
 }
 if(window.screen.availWidth<720){
-    let video=document.getElementsByTagName("video")[0];
+    let video=document.getElementsByTagName("source")[0];
     video.src="woop/mov_Woop_MOBILE.mp4"}
 
     var owl = $(".owl-one");
