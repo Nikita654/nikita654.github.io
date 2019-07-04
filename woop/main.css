@@ -835,6 +835,8 @@ top: 26%;
     position: relative;
 }
 .otz-grid{
+    position: relative;
+    left: -288px;
     max-width: 80px;
     min-width: 80px;
     height: 80px;
@@ -1432,7 +1434,10 @@ width: 492px;
     }
 }
 @media(max-width: 767px){
-    
+    .otz-grid{
+        position: relative;
+        left: 0px
+    }
     .promo-button-soc{
         margin: 32px 32px 0 32px;
     }

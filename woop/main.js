@@ -75,16 +75,29 @@ if(window.screen.availWidth<720){
           touchDrag:false,
           freeDrag:  true,
           mouseDrag:false,
+
+         
         });
        
        
        
      
 
+function changePositionI(){
+  let stage=document.getElementsByClassName("owl-stage")[0];
+  stage.classList.remove("owl-stage")
+  if(window.screen.availWidth<768){
+    stage.classList.add("owl-stage")
+  }
 
+          
+}
+changePositionI()
         function changePos(a){
+          
           owl.trigger('to.owl.carousel', a, 500);
           owl1.trigger('to.owl.carousel', a, 500);
+         
         }
         $(".otz-arrow-right").click(function(){
             owl.trigger("next.owl.carousel");
