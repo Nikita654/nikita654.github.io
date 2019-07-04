@@ -6,6 +6,19 @@ function openPopup(){
   let popup=document.getElementsByClassName("popup-promo")[0];
   popup.style.display="block";
 }
+
+let index=0;
+function openlang(n){
+  index=index+n;
+  openlangW(index);
+};
+function openlangW(n){
+  let lang=document.getElementsByClassName("other-lang")[0];
+  if (n%2==1){
+    lang.style.display="block"
+  }; if(n%2==0) {
+    lang.style.display="none"
+};}
 function getsubpromo(a){
     let svg=a.attributes["data-svg"].value;
     let icon=document.getElementsByClassName("popup-soc-icon")[Number(svg)];

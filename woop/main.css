@@ -60,6 +60,9 @@ header{
 .h-lang,.h-plat{
     display: flex;
 }
+.h-lang{
+    position: relative;
+}
 .h-plat img{
     max-width: 46.2px;
     min-width: 46.2px;
@@ -85,6 +88,14 @@ header{
     cursor:pointer;
     margin-top: 26px;
     transition: all .5s ease;
+}
+.other-lang
+{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    z-index: 5;
+   display: none;
 }
 .h-lang-current:hover{
     color: white;
