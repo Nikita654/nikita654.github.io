@@ -1,22 +1,52 @@
-
-function liders() {
+function users() {
   
   var xhr = new XMLHttpRequest();
-  xhr.open("POST", "http://podnimaem.cash/api/games/get_total_players_won", true);
-  xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhr.open("get", "http://podnimaem.cash/api/games/get_total_players_won", true);
+
 
   xhr.onreadystatechange = function() {
       if (xhr.readyState == 4 && xhr.status === 200) { 
         rek2= JSON.parse(xhr.response)
-
+        let names=document.getElementsByClassName('online-won')[0];
+           
+            
+      
+        names.innerHTML=rek2.amount
+      
+     
        
         
   
-     console.log(rek2)
+    
       }
       
   }
-  xhr.send(rek2);
+  xhr.send(null);
+}
+function liders() {
+  
+  var xhr = new XMLHttpRequest();
+  xhr.open("get", "http://podnimaem.cash/api/games/get_leaders?interval=all", true);
+
+
+  xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4 && xhr.status === 200) { 
+        rek2= JSON.parse(xhr.response)
+        let names=document.getElementsByClassName('liders-names');
+            let money=document.getElementsByClassName('liders-payments');
+            
+      for (i = 0; i < 4; i++) {
+        names[i].innerHTML=rek2.leaders.by_sum[i].username;
+        money[i].innerHTML=rek2.leaders.by_sum[i].total_bets.sum;
+      }
+       
+        
+  
+     
+      }
+      
+  }
+  xhr.send(null);
 }
 
 
@@ -65,7 +95,7 @@ function payments() {
       }
       xhr.send();
     }
-
+    users()
     online()
     liders();
     payments()
