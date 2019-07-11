@@ -1,7 +1,7 @@
 function users() {
   
   var xhr = new XMLHttpRequest();
-  xhr.open("get", "http://podnimaem.cash/api/games/get_total_players_won", true);
+  xhr.open("get", "https://podnimaem.cash/api/games/get_total_players_won", true);
 
 
   xhr.onreadystatechange = function() {
@@ -26,7 +26,7 @@ function users() {
 function liders() {
   
   var xhr = new XMLHttpRequest();
-  xhr.open("get", "http://podnimaem.cash/api/games/get_leaders?interval=all", true);
+  xhr.open("get", "https://podnimaem.cash/api/games/get_leaders?interval=all", true);
 
 
   xhr.onreadystatechange = function() {
@@ -62,7 +62,7 @@ function liders() {
 
 function online() {
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://ws.podnimaem.cash/clients_count");
+  xhr.open("GET", "https://ws.podnimaem.cash/clients_count");
   xhr.onreadystatechange = function() {
       if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) { 
         rek2= JSON.parse(xhr.response)
@@ -78,7 +78,7 @@ function online() {
 }
 function payments() {
       var xhr = new XMLHttpRequest();
-      xhr.open("GET", "http://podnimaem.cash/api/payments/last_payments");
+      xhr.open("GET", "https://podnimaem.cash/api/payments/last_payments");
       xhr.onreadystatechange = function() {
           if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) { 
             rek2= JSON.parse(xhr.response)
