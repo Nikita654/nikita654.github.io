@@ -1237,6 +1237,17 @@ width: 492px;
     transition: fill .5s ease;
     cursor: pointer;
    }
+   .lider-img{
+    max-width: 144px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 144px;
+    height: 144px;
+    object-fit: contain;
+    position: relative;
+    top: 68px;
+    margin-bottom:144px;
+}
 @media(max-width: 1250px){
     .h-plat{
         display:none;
@@ -1261,7 +1272,10 @@ width: 492px;
     .box-img24{
         display: block;
     }
-
+    .lider-img{
+        top: 68px;
+        margin-bottom:99px;
+    }
     .box-text1{
         left: 45%;
         top: 7%;
@@ -1309,7 +1323,7 @@ width: 492px;
         margin-bottom: 0;
     }
     .lider-win{
-        margin-bottom: 188px;
+        margin-bottom: 148px;
     }
     .oplata-iteml,.otz-arrow-left,.otz-arrow-right{
     display: none;
@@ -1328,9 +1342,11 @@ width: 492px;
         display: none;
     }
     .lider-img{
-        height: 283px;
+        height: 144px;
         position: relative;
-        top: 20px
+        top: 88px;
+        margin-right: 68px;
+        margin-left: 68px
     }
     .popup-promo-content{
         position: absolute;
@@ -1581,8 +1597,8 @@ width: 492px;
             text-align: center;
         }
         .lider-number{
-        left: 66.5%;
-        top: 8%;
+        left: 68%;
+        top: 10%;
         }
         
         .lider-game {
@@ -1705,3 +1721,23 @@ width: 492px;
         position: relative;
         left: 0px
     }}
+
+
+.oplata-item-img
+{
+    max-width: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 80px;
+    height: 80px;
+    object-fit: contain;
+    z-index: -1;
+    margin-top: 64px;
+    margin-bottom: -30px
+}
+.liders-img{
+    max-width: 80px;
+    min-width: 80px;
+    height: 80px;
+    object-fit: contain
+}
