@@ -882,6 +882,7 @@ top: 26%;
     opacity: 0.4;
     box-shadow: 0 0 64px 0 rgba(0, 213, 170, 0.35);
     transition: all .5s ease;
+    border-radius: 20px;
 }
 .otz-name{
     font-family:"Avenir Next Cyr";
