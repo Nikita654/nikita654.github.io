@@ -1,6 +1,6 @@
 @import url(normalize.css);
-@font-face{font-family:"Avenir Next Cyr-Demi";src:url("/woop/fonts/AvenirNextCyrDemi.woff") format("woff")}
-@font-face{font-family:"Avenir Next Cyr";src:url("/woop/fonts/AvenirNextCyr.woff") format("woff")}
+@font-face{font-family:"Avenir Next Cyr-Demi";src:url("../fonts/AvenirNextCyrDemi.woff") format("woff")}
+@font-face{font-family:"Avenir Next Cyr";src:url("../fonts/AvenirNextCyr.woff") format("woff")}
 html{
     max-width: 100%;
     overflow-x: hidden;
@@ -371,10 +371,10 @@ margin-bottom: 74px;}
     text-align: left;
     color: #4e8dff;
    
-    margin-bottom: 32px;
+    margin-bottom: 54px;
 }
 .game-descr4{
-    margin-bottom: 147px;
+    margin-bottom: 346px;
 }
 .game-feature{
     font-family:"Avenir Next Cyr";
@@ -498,6 +498,12 @@ margin-bottom: 74px;}
 }
 .game-status p{
     margin: 0 0 0px 0;
+}
+.game-descr2{
+    margin-bottom: 186px
+}
+.game-descr3{
+    margin-bottom: 10px
 }
 .box{
     max-width: 1216px;
@@ -976,7 +982,7 @@ top: 26%;
     margin-top: 14px;
 }
 .soon-img4{
-    margin-top: 20px;
+    margin-top: 17px;
 }
 .soon-item-title{
     font-family:"Avenir Next Cyr-Demi";
@@ -1247,6 +1253,10 @@ width: 492px;
     position: relative;
     top: 68px;
     margin-bottom:144px;
+    border-radius: 20px;
+}
+.liders-img{
+    border-radius: 20px;
 }
 @media(max-width: 1250px){
     .h-plat{
@@ -1338,6 +1348,9 @@ width: 492px;
     }
 }
 @media(max-width: 1023px){
+    .soon-item-title{
+        margin-right: 0
+    }
     .popup-priz-img{
         display: none;
     }
@@ -1458,6 +1471,7 @@ width: 492px;
         height: 40px;
     }
     .lider-game{
+        
         margin-right: 170px;
         margin-top: 10px;
     }
@@ -1733,9 +1747,11 @@ width: 492px;
     object-fit: contain;
     z-index: -1;
     margin-top: 64px;
-    margin-bottom: -30px
+    margin-bottom: -30px;
+    border-radius: 20px;
 }
 .liders-img{
+    border-radius: 20px;
     max-width: 80px;
     min-width: 80px;
     height: 80px;
