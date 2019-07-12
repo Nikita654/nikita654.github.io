@@ -64,7 +64,7 @@ function gamesRightOut(){
 }
 if(window.screen.availWidth<720){
     let video=document.getElementsByTagName("source")[0];
-    video.src="woop/mov_Woop_MOBILE.mp4"}
+    video.src="video/mov_Woop_MOBILE.mp4"}
 
     var owl = $(".owl-one");
         owl.owlCarousel({
