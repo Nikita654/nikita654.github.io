@@ -1084,9 +1084,9 @@ footer a:hover{
     left: 50%;
     top: 106.25%;
     transform: translate(-50%,-50%);
-    max-width: 70%;
-    min-width: 70%;
-    height:70%;
+    max-width: 90%;
+    min-width: 90%;
+    height: 80%;
     padding-bottom:56.25%;
     display: none;
     box-shadow: 0 16px 32px 0 #001528;
