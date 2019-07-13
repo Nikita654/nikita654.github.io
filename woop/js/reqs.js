@@ -111,33 +111,33 @@ function payments() {
       let rek2=randomInteger(-9, 9);
   let players=document.getElementsByClassName('online-players')[0];
   players.innerHTML=rek2+Number(players.innerHTML);
-  if (Number(players.innerHTML)<0){
+  if (Number(players.innerHTML)<=0){
     players.innerHTML=0;
   };    
         let players1,players2,players3;
         let game1=document.getElementsByClassName('online-players-1')[0];
         let game2=document.getElementsByClassName('online-players-2')[0];
         let game3=document.getElementsByClassName('online-players-3')[0];
-        if(rek2>0){
+       
+      
           players1=randomInteger(0, rek2);
         players2=randomInteger(0, rek2-players1);
         players3=rek2-players1-players2;
-        }
-        if(rek2<=0){ players1=randomInteger(rek2, 0);
-          players2=randomInteger(rek2-players1, 0);
-          players3=rek2-players1-players2;}
+        
+        
         game1.innerHTML=Number(game1.innerHTML)+players1;
         game2.innerHTML=Number(game2.innerHTML)+players2;
         game3.innerHTML=Number(game3.innerHTML)+players3;
-        if (Number( game1.innerHTML)<0){
+        if (Number( game1.innerHTML)<=0){
           game1.innerHTML=0;
         };
-        if (Number( game2.innerHTML)<0){
+        if (Number( game2.innerHTML)<=0){
           game2.innerHTML=0;
         };
-        if (Number( game3.innerHTML)<0){
+        if (Number( game3.innerHTML)<=0){
           game3.innerHTML=0;
         };
+        
     }, 7000); 
 
 

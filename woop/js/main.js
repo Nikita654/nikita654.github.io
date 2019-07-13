@@ -1,10 +1,22 @@
 function closePopup(){
     let popup=document.getElementsByClassName("popup-promo")[0];
     popup.style.display="none";
+    let popupContent=document.getElementsByClassName("popup-promo-content")[0];
+    popupContent.style.display="block";
+    let popupVideo=document.getElementsByClassName("popup-promo-video")[0];
+    popupVideo.style.display="none";
 }
 function openPopup(){
   let popup=document.getElementsByClassName("popup-promo")[0];
   popup.style.display="block";
+}
+function openPopupVideo(){
+  let popup=document.getElementsByClassName("popup-promo")[0];
+  let popupContent=document.getElementsByClassName("popup-promo-content")[0];
+  let popupVideo=document.getElementsByClassName("popup-promo-video")[0];
+  popupContent.style.display="none";
+  popup.style.display="block";
+  popupVideo.style.display="block";
 }
 
 let index=0;

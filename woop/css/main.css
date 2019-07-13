@@ -1079,6 +1079,15 @@ footer a:hover{
     background-color: #4e8dff;
     text-align: center
 }
+.popup-promo-video{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    box-shadow: 0 16px 32px 0 #001528;
+   
+}
 .promo-title
 {
   font-family:"Avenir Next Cyr-Demi";

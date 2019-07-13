@@ -121,9 +121,9 @@
 		<section class="top">
 			<h1 class="top-title">Выиграй деньги с<span class="top-title-name"> Woop!</span></h1>
 			<div class="top-btns">
-			<div class="top-play button">
+			<div onclick="openPopupVideo()" class="top-play button">
 				<img src="woop/img/play.png"  alt="воспроизвести" class="top-play-img">
-				<span class="top-play-text">Как выиграть?</span>
+				<span  class="top-play-text">Как выиграть?</span>
 			</div>
 			<div class="top-bt button">
 				<div class="top-bt-text">Давай сыграем</div>
@@ -449,7 +449,7 @@ Visa, MasterCard, Qiwi, Яндекс.Деньги, Bitcoin</p>
 
 	 	</div>
 	 	<div class="top-btns">
-			<div class="top-play button">
+			<div onclick="openPopupVideo()" class="top-play button">
 				<img src="woop/img/play.png"  alt="воспроизвести" class="top-play-img">
 				<span class="top-play-text">Как выиграть?</span>
 			</div>
@@ -621,6 +621,7 @@ Visa, MasterCard, Qiwi, Яндекс.Деньги, Bitcoin</p>
 
 
 	<section class="popup-promo" data-status="0" onclick="closePopup()">
+		<iframe class="popup-promo-video" width="560" height="315" src="https://www.youtube.com/embed/02L2NjtoLaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<section class="popup-promo-content" >
 			<div class="promo-start" onclick="event.stopPropagation()">
 				<h2 class="promo-title">Получи промокод</h2>
