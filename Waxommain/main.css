@@ -170,13 +170,36 @@ footer {
     color: #998675; }
 
 header {
-  background-image: url("img/sl-back.png");
-  background-color: #211C19;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: transparent;
   max-width: 100%;
   -webkit-transition: opacity 3s ease;
-  transition: opacity 3s ease; }
+  transition: opacity 3s ease;
+  overflow: hidden;
+  position: relative; }
+
+.header-back-imgs {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease; }
+
+.header-back-img {
+  max-width: calc( 100% + 0px);
+  min-width: calc( 100% + 0px);
+  height: 100%;
+  position: relative;
+  z-index: -10;
+  -o-object-fit: none;
+     object-fit: none; }
 
 .header-grid {
   -webkit-animation-name: bounceInDown;

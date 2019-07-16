@@ -1,11 +1,27 @@
 @import "sass/vars"
-header
-    background-image: url('img/sl-back.png') 
-    background-color: #211C19
-    background-repeat: no-repeat
-    background-size: cover
+header 
+    background-color: transparent
     max-width: 100%
     transition: opacity 3s ease
+    overflow: hidden
+    position: relative
+    
+.header-back-imgs
+    position: absolute
+    left: 0
+    top: 0
+    z-index: -10
+    display: flex
+    flex-wrap: nowrap
+    transition: transform 1s ease
+.header-back-img
+    max-width: calc( 100% + 0px)
+    min-width: calc( 100% + 0px)
+    height: 100%
+    position: relative
+    
+    z-index: -10
+    object-fit: none
 .header-grid
     animation-name: bounceInDown
     padding-top: 3vh
