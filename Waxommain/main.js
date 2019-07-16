@@ -148,6 +148,7 @@ function rpostsImage(n){
 
 
 var doAnimations = function() {
+    for(let i=0;i<3;i++){
     let offset =  window.screen.availHeight + window.pageYOffset,
         animatables = document.getElementsByClassName('animatable');
     if (animatables.length == 0) {
@@ -165,9 +166,30 @@ var doAnimations = function() {
       animatable.classList.add('animated');
       };
     };};
+
+};
     window.addEventListener('load', doAnimations,false);
     window.addEventListener('scroll', doAnimations,false);
     doAnimations();
     doAnimations();
     doAnimations();
     doAnimations();
+
+function openCart(){
+    let cart=document.getElementsByClassName("header-cart")[0];
+    cart.style.display="block";
+    cart.classList.add('animated');
+    cart.style.animationName="Cart"
+    
+}
+function closeCart(){
+    let cart=document.getElementsByClassName("header-cart")[0];
+    cart.style.animationName="cartR"
+    cart.classList.add('animated');
+    setTimeout(function(){
+        cart.classList.remove('animated');
+        cart.style.display="none";
+        },1200);
+
+
+}

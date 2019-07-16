@@ -1,10 +1,10 @@
 @import url(sass/normalize.css);
 @font-face {
   font-family: "proximaNova regular";
-  src: url("../fonts/12093.ttf") format("ttf"); }
+  src: url("/fonts/12093.ttf") format("ttf"); }
 @font-face {
   font-family: "proximaNova bold";
-  src: url("../fonts/11096.otf") format("ttf");
+  src: url("/fonts/11096.otf") format("otf");
   font-weight: bold; }
 body {
   font-size: 16px;
@@ -279,10 +279,11 @@ footer {
 
 header {
   text-align: center;
-  height: 120vh;
+  height: auto;
   color: white;
   background: url("img/backh1.jpg") 0 0 no-repeat, url("img/header-back1.png") 100% 0 repeat-x;
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 220px; }
 
 .header-menu-grid {
   font-family: "proximaNova regular", Arial, sans-serif;
@@ -961,7 +962,10 @@ header {
   grid-template-columns: 1fr 1fr;
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: -45vh; }
+  margin-bottom: -250px; }
+
+.dline {
+  margin-bottom: -400px; }
 
 .right-line {
   background-color: #A9946E;
@@ -972,7 +976,7 @@ header {
   margin-left: auto;
   transform: rotate(90deg);
   position: relative;
-  top: -12vh; }
+  top: 0vh; }
 
 .left-line {
   background-color: #A9946E;
@@ -1004,7 +1008,7 @@ header {
   color: #BEA67C;
   opacity: 0.2;
   position: relative;
-  top: -40vh;
+  top: -200px;
   margin: 0; }
 
 .D {
