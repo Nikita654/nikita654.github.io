@@ -177,6 +177,9 @@ header {
   overflow: hidden;
   position: relative; }
 
+.header-background {
+  width: 100%; }
+
 .header-back-imgs {
   position: absolute;
   left: 0;
@@ -194,8 +197,8 @@ header {
   transition: transform 1s ease, -webkit-transform 1s ease; }
 
 .header-back-img {
-  max-width: calc( 100% + 0px);
-  min-width: calc( 100% + 0px);
+  max-width: 100%;
+  min-width: 100%;
   width: 100%;
   height: 100%;
   position: relative;

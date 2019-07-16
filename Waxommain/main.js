@@ -16,18 +16,18 @@ function currentBack(n){
 function showsSlides(n,p) {
     let back = document.getElementsByClassName("header-back-imgs");
     let circle = document.getElementsByClassName("slider-circle");
-    let sizeImg=document.getElementsByClassName("header-back-img")[0];
-    let size=sizeImg.style.width;
-   
+    let sizeImg=document.getElementsByClassName("header-background")[0];
+    let size=-sizeImg.offsetWidth;
     if (n==0){slideindex=5;n=5};
     if (n==6){slideindex=1;n=1;};
-    setTimeout(function(){
+    setTimeout(()=>{
         for(let i=0; i<5;i++){
         circle[i].classList.remove("header-circle-active");};
         if(n==1){
             back[0].style.transform="translateX(0px)";
         };
         if(n==2){
+            
             back[0].style.transform="translateX("+1*size+"px)";
         };
         if(n==3){
@@ -41,11 +41,41 @@ function showsSlides(n,p) {
         };
         
         circle[n-1].classList.add("header-circle-active");
-        setTimeout(function(){back[0].style.animationName="";},1000);},800);
+    },0)
                
 };
 
-
+let stars1=document.getElementsByClassName('header-background')[0]; 
+          
+          var initialPoint;
+          var finalPoint;
+          if(stars1!=undefined){
+          stars1.addEventListener('touchstart', function(event) {
+          event.stopPropagation();
+          initialPoint=event.changedTouches[0];
+          }, false);
+          stars1.addEventListener('touchend', touchEnd, false);
+         };
+  
+          function touchEnd(event){
+              event.stopPropagation();
+              stars1.removeEventListener('touchend',touchEnd , false);
+          finalPoint=event.changedTouches[0];
+          var xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
+          var yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
+          if (xAbs > 20 || yAbs > 20) {
+          if (xAbs > yAbs) {
+          if (finalPoint.pageX < initialPoint.pageX){
+              
+            prevBack(1)}
+          else{
+            prevBack(-1)}
+          }
+          };
+          setTimeout(()=>{
+            stars1.addEventListener('touchend', touchEnd, false);
+        },500)
+          };
 
 function ProjectChoose(x){
     let a=arguments;
