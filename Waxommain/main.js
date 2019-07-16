@@ -16,14 +16,16 @@ function currentBack(n){
 function showsSlides(n,p) {
     let back = document.getElementsByClassName("header-back-imgs");
     let circle = document.getElementsByClassName("slider-circle");
-    let size=-window.screen.availWidth;
+    let sizeImg=document.getElementsByClassName("header-back-img")[0];
+    let size=sizeImg.style.width;
+    alert(size)
     if (n==0){slideindex=5;n=5};
     if (n==6){slideindex=1;n=1;};
     setTimeout(function(){
         for(let i=0; i<5;i++){
         circle[i].classList.remove("header-circle-active");};
         if(n==1){
-            back[0].style.transform="translateX("+0*size+"px)";
+            back[0].style.transform="translateX(0px)";
         };
         if(n==2){
             back[0].style.transform="translateX("+1*size+"px)";
