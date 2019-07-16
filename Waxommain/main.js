@@ -18,7 +18,7 @@ function showsSlides(n,p) {
     let circle = document.getElementsByClassName("slider-circle");
     let sizeImg=document.getElementsByClassName("header-back-img")[0];
     let size=sizeImg.style.width;
-    alert(size)
+   
     if (n==0){slideindex=5;n=5};
     if (n==6){slideindex=1;n=1;};
     setTimeout(function(){

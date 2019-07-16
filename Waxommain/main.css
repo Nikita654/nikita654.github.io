@@ -429,10 +429,15 @@ header {
 
 .project-h3 {
   font-family: "Raleway Medium", arial;
-  padding-top: 15px; }
+  padding-top: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .project-h3, .project-grid-p {
-  padding-left: 25px; }
+  padding-left: 25px;
+  max-width: 90%;
+  min-width: 90%; }
 
 .project-button {
   -webkit-animation-name: bounceInLeft;
