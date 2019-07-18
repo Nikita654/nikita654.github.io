@@ -71,6 +71,7 @@ header
     padding-top: 2vh
     margin: 0 auto
 .header-s-text
+    transition: all .5s ease
     animation-name: Cart
     visibility: hidden
     animation-play-state: paused 
@@ -88,4 +89,6 @@ header
     background-color: $dgrey
     font-family: 'Raleway Medium', arial
     margin-left: 40px
+    &::placeholder
+        color: white
 

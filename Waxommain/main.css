@@ -259,6 +259,8 @@ header {
   margin: 0 auto; }
 
 .header-s-text {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -webkit-animation-name: Cart;
           animation-name: Cart;
   visibility: hidden;
@@ -278,6 +280,14 @@ header {
   background-color: #555555;
   font-family: "Raleway Medium", arial;
   margin-left: 40px; }
+  .header-s-text::-webkit-input-placeholder {
+    color: white; }
+  .header-s-text:-ms-input-placeholder {
+    color: white; }
+  .header-s-text::-ms-input-placeholder {
+    color: white; }
+  .header-s-text::placeholder {
+    color: white; }
 
 .mdevice {
   background-image: url("img/mb-back.png");

@@ -298,3 +298,20 @@ document.onkeydown = function(evt) {
 
 
 
+
+
+
+function validationSearch()                                    
+    { let uname = document.forms["LogForm"]["q"];
+    if (uname.value == "")                                  
+    { 
+        uname.placeholder="Please enter your Search."; 
+        uname.focus();
+        uname.style.backgroundColor="#998675"
+        setTimeout(() => {
+            uname.style.backgroundColor="#555555"
+        }, 2000);
+        return false; 
+    };
+    return true; 
+    }
