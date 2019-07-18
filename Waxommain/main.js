@@ -77,23 +77,26 @@ let stars1=document.getElementsByClassName('header-background')[0];
         },500)
           };
 
-function ProjectChoose(x){
-    let a=arguments;
+function ProjectChoose(x,name){
+    let a=document.getElementsByClassName(name);
     let k,m,menuButton=document.getElementsByClassName("category");
     let chooseArticle=document.getElementsByClassName("project-gridel");
     m=chooseArticle.length;
+    let n=menuButton.length;
     for(let i=0;i<m-1;i++){
-        menuButton[i].classList.remove("categoryACTIVE");
         chooseArticle[i].classList.remove("project-gridelACTIVE");
         chooseArticle[i].style.display="none";
+};
+for(let i=0;i<n;i++){
+    menuButton[i].classList.remove("categoryACTIVE");
 };
     chooseArticle[m-1].style.display="none";
     chooseArticle[m-1].classList.remove("project-gridelACTIVE");
     menuButton[x].classList.add("categoryACTIVE");
     k=a.length;
-    for(let i=1;i<k;i++){
+    for(let i=0;i<k;i++){
         //chooseArticle[a[i]].classList.add("project-gridelACTIVE");
-        chooseArticle[a[i]].style.display="block";};
+        a[i].style.display="block";};
 };
 
 function prevrposts(n){
@@ -203,6 +206,95 @@ function closeCart(){
         cart.classList.remove('animated');
         cart.style.display="none";
         },1200);
-
-
 }
+
+
+let indexSearch=0;
+function openSearch(n){
+    closeSearch(indexSearch+=n);
+};
+function closeSearch(n){
+    if (n%2==1){
+    let cart=document.getElementsByClassName("header-s-text")[0];
+
+    cart.classList.add('animated');
+    cart.style.animationName="Search"
+    }
+    if(n%2==0) {
+        let cart=document.getElementsByClassName("header-s-text")[0];
+    cart.style.animationName="SearchR"
+    cart.classList.add('animated');
+    setTimeout(function(){
+        cart.classList.remove('animated');
+        
+        },1200);
+    }
+}
+
+
+
+
+function openBuy(){
+    let popup=document.getElementsByClassName("popup-buy")[0];
+    let cart=document.getElementsByClassName("purchase")[1];
+    popup.style.display="block";
+    cart.classList.add('animated');
+    cart.style.animationName="Purchase"
+    popup.style.backgroundColor="rgba(0, 0, 0, 0.19)"
+    
+}
+function closeBuy(){
+    let popup=document.getElementsByClassName("popup-buy")[0];
+    let cart=document.getElementsByClassName("purchase")[1];
+    cart.style.animationName="PurchaseR"
+    cart.classList.add('animated');
+    popup.style.backgroundColor="rgba(0, 0, 0, 0)"
+    setTimeout(function(){
+        cart.classList.remove('animated');
+        popup.style.display="none";
+        },1200);
+}
+
+
+
+function moreProjects(){
+    let block=document.getElementsByClassName("project-grid")[0];
+    let extra=block.innerHTML;
+    block.innerHTML+=extra;
+}
+
+
+
+
+
+function closePopupV(){
+    let popup=document.getElementsByClassName("popup-video")[0];
+    popup.style.display="none";
+    let video=document.getElementsByClassName("popup-video-v")[0];
+    let source=video.src
+    video.src=source
+}
+
+function openPopupV(){
+  let popup=document.getElementsByClassName("popup-video")[0];
+  popup.style.display="block";
+  let video=document.getElementsByClassName("popup-video-v")[0];
+    video.style.display="block";
+}
+
+/*
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    var isEscape = false;
+    if ("key" in evt) {
+        isEscape = (evt.key === "Escape" || evt.key === "Esc");
+    } else {
+        isEscape = (evt.keyCode === 27);
+    }
+    if (isEscape) {
+        closePopupV()
+    }
+};*/
+
+
+

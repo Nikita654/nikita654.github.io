@@ -31,3 +31,42 @@
     margin-bottom: 0px
     font-size: .9em
     font-family: 'Montserrat Light', arial
+
+.popup-video
+    position: fixed
+    left: 0
+    top: 0
+    height: 100vh
+    max-width: 100%
+    min-width: 100%
+    overflow: hidden
+    overflow-y: auto
+    display: none
+    background-color: rgba(0, 0, 0, 0)
+    transition: all 1s ease
+    z-index: 10000
+.popup-video-v
+    max-width: 100%
+    min-width: 100%
+    height: 100%
+.popup-video-content
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    max-width: 90%
+    min-width: 90%
+    height: 80%
+    padding-bottom: 0
+    box-shadow: 0 16px 32px 0 #001528
+.popup-video-cross
+    position: absolute
+    left: 96%
+    font-size: 60px
+    top: -15px
+    cursor: pointer
+    &:hover
+        color: $orange
+    &:active
+        font-size: 57px
+        top: -13px

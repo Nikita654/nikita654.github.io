@@ -13,11 +13,11 @@
 <body>
 	<header class="header-background " >
 		<div class="header-back-imgs">
+			<img src="Waxommain/img/sl-back5.jpeg" alt="Back Header" class="header-back-img">
 			<img src="Waxommain/img/sl-back2.jpeg" alt="Back Header" class="header-back-img">
 			<img src="Waxommain/img/sl-back.png" alt="Back Header" class="header-back-img">
 			<img src="Waxommain/img/sl-back3.jpeg" alt="Back Header" class="header-back-img">
 			<img src="Waxommain/img/sl-back4.jpeg" alt="Back Header" class="header-back-img">
-			<img src="Waxommain/img/sl-back5.jpeg" alt="Back Header" class="header-back-img">
 		</div>
 		<section class="header-cart ">
 			<div onclick="closeCart()" class="cart-cross">×</div>
@@ -25,7 +25,7 @@
 			<object type="image/svg+xml"class="car-bag" data="Waxommain/img/bag.svg" >Your browser does not support SVGs</object>
 <h2 class="cart-label">Your Cart </h2>
 			</div>
-         <button class="purchase-button button animatable">PURCHASE NOW</button>
+         <button onclick="openBuy()" class="purchase-button button animatable">PURCHASE NOW</button>
 		</section>
 		<div class="grid header-grid animatable"><div><object type="image/svg+xml" data="Waxommain/img/Waxom.svg" >Your browser does not support SVGs</object></div>
 		<div>
@@ -34,7 +34,7 @@
 				<li><a href="" class="menulink">About Us</a></li>
 				<li><a href="" class="menulink">Portfolio</a></li>
 				<li><a href="index4.html" class="menulink">WOOP</a></li>
-				<li><a href="index2.html" class="menulink">test CG</a></li>
+				<li><a href="index2.html" class="menulink">CG</a></li>
 				<li><a href="index0.html" class="menulink">Wooder</a></li>
 				<li><a href="index1.html" class="menulink">Creative</a></li>
 				<li><a href="" class="menulink">Contact</a></li>
@@ -56,7 +56,7 @@
   </defs>
   <path d="M14.995,2.999 L13.496,2.999 C13.496,1.342 11.483,-0.002 8.999,-0.002 C6.514,-0.002 4.501,1.342 4.501,2.999 L3.002,2.999 C1.346,2.999 0.003,4.341 0.003,5.997 L0.003,20.995 C0.003,22.651 1.346,23.994 3.002,23.994 L14.995,23.994 C16.652,23.994 17.994,22.651 17.994,20.995 L17.994,5.997 C17.994,4.341 16.652,2.999 14.995,2.999 ZM8.999,1.498 C10.655,1.498 11.997,1.962 11.997,2.999 L6.000,2.999 C6.000,1.962 7.343,1.498 8.999,1.498 ZM16.495,20.995 C16.495,21.823 15.824,22.494 14.995,22.494 L3.002,22.494 C2.174,22.494 1.502,21.823 1.502,20.995 L1.502,19.495 L16.495,19.495 L16.495,20.995 ZM16.495,17.995 L1.502,17.995 L1.502,5.997 C1.502,5.169 2.174,4.497 3.002,4.497 L4.501,4.497 L4.501,8.998 L6.000,8.998 L6.000,4.497 L11.997,4.497 L11.997,8.998 L13.496,8.998 L13.496,4.497 L14.995,4.497 C15.824,4.497 16.495,5.169 16.495,5.997 L16.495,17.995 Z" class="cls-1"/>
 </svg>
-	 <svg class="header-search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="24" height="24" viewBox="0 0 24 24">
+	 <svg onclick="openSearch(1)" class="header-search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="24" height="24" viewBox="0 0 24 24">
   <defs>
     <style>
       .cls-1 {
@@ -71,7 +71,13 @@
   <path d="M23.762,22.681 L17.569,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.001,4.443 0.001,9.929 C0.001,15.416 4.519,19.862 10.093,19.862 C12.502,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.065,23.464 24.065,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z" class="cls-1"/>
 </svg>
 
-</div></div>
+</div>
+</div>
+<form action="/" class="header-search-form header-grid">
+	<input type="text" class="header-s-text"/>
+	<button class="header-submit" style="display: none"></button>
+</form>
+
 	<div class="slider ">
 		<h2 class="slider-h2 animatable">Unique and Modern Design</h2>
 		<h1 class="slider-h1 animatable">Portfolio PSD Template</h1>
@@ -207,31 +213,31 @@
 		<div>
 		<h2 class="purchase-h2 animatable"><span>Waxom</span> Multipurpose WordPress Theme.</h2>
 		<h3 class="purchase-h3 animatable">Don't Forget to Rate the Template. Thanks so much!</h3></div>
-		<div><button class="purchase-button button animatable">PURCHASE NOW</button>
+		<div><button onclick="openBuy()" class="purchase-button button animatable">PURCHASE NOW</button>
 	</div></div></div>
 
 
 	<div class="project">
 		<h2 class="project-h2 animatable">Our Latest Projects.</h2>
 		<p class="project-p animatable">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-		<button class="category animatable" onclick="ProjectChoose(0,0,2,3,1,4,5)">
+		<button class="category animatable" onclick="ProjectChoose('0','project-gridel')">
 			All
 		</button>
-		<button class= "category animatable " onclick="ProjectChoose(1,2,4)">
+		<button class= "category animatable" onclick="ProjectChoose('1','project-d')">
 			Web Design
 		</button>
-		<button class="category animatable" onclick="ProjectChoose(2,0)">
+		<button class="category animatable" onclick="ProjectChoose('2','project-m')">
 			Mobile App	
 		</button>
-		<button class="category animatable" onclick="ProjectChoose(3,4)">
+		<button class="category animatable" onclick="ProjectChoose('3','project-i')">
 			Illustration
 		</button>
-		<button class="category animatable" onclick="ProjectChoose(4,1,3,5)">
+		<button class="category animatable" onclick="ProjectChoose('4','project-ph')">
 			Photography
 		</button>
 
 		<div class="project-grid animatable">
-			<div class="project-gridel animatable">
+			<div class="project-gridel project-m  animatable">
 				<div class="project-img project-img1"><div class="project-img-in"></div></div>
 				<div class="project-text">
 				<h3 class="project-h3">Claritas Etiam Processus</h3>
@@ -239,7 +245,7 @@
 				</div>
 				<div class="project-sharpbite"></div>
 			</div>
-			<div class="project-gridel animatable">
+			<div class="project-gridel  project-d animatable">
 				<div class="project-img project-img2"><div class="project-img-in"></div></div>
 				<div class="project-text">
 				<h3 class="project-h3">Quam Nutamus Farum</h3>
@@ -247,7 +253,7 @@
 				</div>
 				<div class="project-sharpbite"></div>
 			</div>
-			<div class="project-gridel animatable">
+			<div class="project-gridel  project-m animatable">
 				<div class="project-img project-img3"><div class="project-img-in"></div></div>
 				<div class="project-text">
 				<h3 class="project-h3">Usus Legentis Videntur</h3>
@@ -255,7 +261,7 @@
 				</div>
 				<div class="project-sharpbite"></div>
 			</div>
-			<div class="project-gridel animatable">
+			<div class="project-gridel  project-ph  animatable">
 				<div class="project-img project-img4"><div class="project-img-in"></div></div>
 				<div class="project-text">
 				<h3 class="project-h3">Claritas Etiam Processus</h3>
@@ -263,7 +269,7 @@
 				</div>
 				<div class="project-sharpbite"></div>
 			</div>
-			<div class="project-gridel animatable">
+			<div class="project-gridel project-i   animatable">
 				<div class="project-img project-img5"><div class="project-img-in"></div></div>
 				<div class="project-text">
 				<h3 class="project-h3">Quam Nutamus Farum</h3>
@@ -271,7 +277,7 @@
 				</div>
 				<div class="project-sharpbite"></div>
 			</div>
-			<div class="project-gridel animatable">
+			<div class="project-gridel project-ph animatable">
 				<div class="project-img project-img6"><div class="project-img-in"></div></div>
 				<div class="project-text">
 				<h3 class="project-h3">Usus Legentis Videntur</h3>
@@ -280,17 +286,22 @@
 				<div class="project-sharpbite"></div>
 			</div>
 		</div>
-		<button class="project-button button animatable">LOAD MORE</button>
+		<button onclick="moreProjects()" class="project-button button animatable">LOAD MORE</button>
 	</div>
 
 
 	<div class="video">
-		<img src="Waxommain/img/vp-button.png" alt="play video" class="video-button animatable">
+		<img src="Waxommain/img/vp-button.png" onclick="openPopupV()" alt="play video" class="video-button animatable">
 		<h2 class="video-h2 animatable">Waxom Video Presentation</h2>
 		<p class="video-p animatable">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
-		<p class="video-time animatable">03:26</p>
+		<p class="video-time animatable">01:55</p>
 	</div>
-
+<div onclick="closePopupV()" class="popup-video">
+	<div onclick="closePopupV()" class="popup-video-cross">×</div>
+	<div onclick="event.stopPropagation()" class="popup-video-content">
+	<iframe class="popup-video-v"  src="https://www.youtube.com/embed/-0N_PygR_WE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+</div>
 
 
 	<div class="mdevice">
@@ -460,6 +471,41 @@
 				<p class="rposts-p">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
 				<div class="rposts-a1"><a href="" class="rposts-a">Read more</a></div>
 			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		</div>
 		<svg class="rposts-left" onclick="prevrposts(-1)"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="21.969" height="21.97" viewBox="0 0 21.969 21.97">
   <defs>
@@ -566,7 +612,15 @@
 	</div></div>
 
 
-
+    <div class="popup-buy">
+    	 <div class="purchase popup-purchase">
+		<div onclick="closeBuy()" class="cart-cross purchase-cross">×</div>
+		<div>
+		<h2 class="purchase-h2 ">Сongratulation! </h2>
+		<h3 class="purchase-h3 ">You buy it now. Thanks so much!</h3></div>
+		
+	</div></div>
+    </div>
 
 
 
