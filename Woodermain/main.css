@@ -509,10 +509,11 @@ header {
 
 .headerp-1grid {
   cursor: pointer;
-  transition: color 0.5 ease; }
+  transition: all 0.5 ease;
+  display: none; }
 
-.headerp-1grid:hover {
-  color: #BEA67C; }
+.header-next {
+  display: none; }
 
 .header-menu-el {
   cursor: pointer;
@@ -795,7 +796,10 @@ header {
   position: relative;
   top: 107px;
   margin: 0 auto -68px auto;
-  z-index: 1; }
+  z-index: 1;
+  transition: all 0.5s ease; }
+  .video-button:hover {
+    opacity: 0; }
 
 .table .table-grid {
   display: grid;
@@ -1116,6 +1120,10 @@ header {
   body {
     font-size: 14px; }
 
+  header .headerp-1grid:hover {
+    color: #BEA67C; }
+  header .headerp-1grid, header .header-next {
+    display: block; }
   header .header-grid-div2 {
     grid-template-columns: 1fr;
     text-align: center; }
@@ -1171,6 +1179,10 @@ header {
   body {
     font-size: 14px; }
 
+  header .headerp-1grid:hover {
+    color: #BEA67C; }
+  header .headerp-1grid, header .header-next {
+    display: block; }
   header .header-grid-div2 {
     grid-template-columns: 1fr;
     text-align: center; }
@@ -1268,6 +1280,10 @@ header {
   body {
     font-size: 14px; }
 
+  header .headerp-1grid:hover {
+    color: #BEA67C; }
+  header .headerp-1grid, header .header-next {
+    display: block; }
   header .header-grid-div2 {
     grid-template-columns: 1fr;
     text-align: center; }

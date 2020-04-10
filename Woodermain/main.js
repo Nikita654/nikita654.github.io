@@ -53,6 +53,7 @@ function scrolle()
 
 
 var doAnimations = function() {
+    for(let i=0;i<5;i++){
     let offset =  window.screen.availHeight + window.pageYOffset,
         animatables = document.getElementsByClassName('animatable');
     if (animatables.length == 0) {
@@ -68,7 +69,7 @@ var doAnimations = function() {
             },1200);
       animatable.classList.remove('animatable');
       animatable.classList.add('animated');
-      };
+      };};
     };};
     doAnimations();
     doAnimations();
@@ -77,3 +78,4 @@ var doAnimations = function() {
     window.addEventListener('scroll', doAnimations,false);
    
     doAnimations();
+    
