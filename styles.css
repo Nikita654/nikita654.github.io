@@ -263,7 +263,7 @@ body {
           flex-wrap: wrap;
   padding: 50px; }
   .block_margin {
-    margin: 50px auto 25px; }
+    margin: 50px auto 50px; }
   .block__close {
     position: absolute;
     right: 5px;
