@@ -1,0 +1,271 @@
+@import "sass/_vars.sass"
+header
+    text-align: center
+    height: auto
+    color: white
+    background: url('img/backh1.jpg') 0 0  no-repeat , url('img/header-back1.png') 100% 0 repeat-x 
+    background-size: cover
+    padding-bottom: 220px
+.header-menu-grid
+    font-family: 'proximaNova regular',Arial, sans-serif
+    color: $lgrey
+    display: grid
+    grid-template-columns: 1fr 2fr 1fr
+.header-grid-div2
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+.header-language
+    font-family: 'proximaNova regular',Arial, sans-serif
+    list-style-type: none
+.header-grid-div1
+    animation-name: bounceInLeft
+    text-align: left
+.header-grid-div3
+    animation-name: bounceInRight
+    text-align: right
+.header-language,.h-languagear
+    display: inline-block
+.header-logop
+    animation-name: Up
+    font-family: 'proximaNova bold','Times New Roman', Times, serif
+    color: white
+    margin-top: 8px
+    font-size: 1.5em
+    letter-spacing: 4px
+.header-logoline
+    text-decoration: line-through
+    text-decoration-color: $orange
+.header-languagel1
+    opacity: 0
+.header-language
+    padding: 0
+    transition: opacity .5s ease
+.header-language:hover
+    .header-languagel1
+        opacity: 1
+.header-info
+    margin-left: auto
+    margin-top: 16px
+    padding-top: 0
+    text-align: center
+    align-content: center
+    background-size: cover
+    height: 20px
+    width: 20px
+    border-radius: 50%
+    border: 1px $lgrey solid
+.header-infop
+    margin: -2.5px 0 0 0
+.header-menu-el
+    animation-name: Up
+.header-gorline1
+    background-color: $orange
+    background-size: cover
+    max-width: 80px
+    height: 5px
+
+.header-h2
+    font-family: 'proximaNova bold','Times New Roman', Times, serif
+    font-size: 4em
+    color: $orange
+.header-twitch
+    background-color: $lgrey
+    background-size: cover
+    height: 15px
+    max-width: 15px
+    border-radius: 50%
+.gorlineright1
+    animation-name: Up 
+    max-width: 1200px
+    margin: 0 auto
+.gorlineright
+    max-width: 105px
+    margin-right: auto
+.gorlineright12
+    animation-name: Up
+    max-width: 1200px
+    margin: 0 auto
+.gorlineright2
+    max-width: 400px
+    margin-left: auto
+    position: relative
+    left: 174px
+    top: 20vh
+.header-gorline
+    background-size: cover
+    display: grid
+    grid-template-columns: 80px 130px 15px 15px 15px 15px
+    text-align: left
+    grid-column-gap: 50px
+    max-width: 600px
+    .header-h2
+        margin: 0
+        padding: 0
+    .header-gorline1,.header-twitch
+        position: relative
+        top: 50px
+.header-gorline
+    position: relative
+    top: 10vh
+    transform: rotate(90deg)
+.header-name
+    animation-name: bounceInRight
+    margin-bottom: 0
+    font-size: 6em
+    letter-spacing: 20px
+    color: $orange
+.header-gorp
+    
+    font-family: 'proximaNova regular',Arial, sans-serif
+    font-size: 1em
+    color: $orange
+    opacity: .3
+    margin: 0
+    word-spacing: 25px
+    letter-spacing: 3px
+    
+.header-gorpout
+    transform: rotate(90deg)
+    max-width: 400px
+    min-width: 400px
+
+
+.header-button
+    animation-name: bounceInLeft
+    background-size: cover
+    height: 40px 
+    max-width: 300px
+    min-width: 300px
+    border: 2px white solid
+    margin-bottom: 5vh
+.header-centercontent
+    background-size: cover
+    height: 40vh
+    max-width: 600px
+    min-width: 600px
+    margin: 0 auto
+.header-buttongrid
+    display: grid
+    grid-template-columns: 2fr 1fr
+    max-width: 250px
+    margin: 0 auto
+    grid-column-gap: 15px
+    
+    p
+        text-align: right
+        margin-top: 8px
+.header-buttonar
+    margin-top: 14px
+
+.header-mouse
+    animation-name: Down
+    cursor: pointer
+    display: grid
+    grid-template-columns: 1fr
+    grid-row-gap: 30px
+    max-width: 5px
+    margin: 0 0 0 -36.016px
+    img
+        margin: 0 auto
+.header-mp
+
+    font-family: 'proximaNova regular',Arial, sans-serif
+    transform: rotate(90deg)
+    margin: 0 
+    padding: 0 0 0 40px
+    opacity: .2
+    letter-spacing: 5px
+.header-share
+    animation-name: bounceInRight
+    cursor: pointer
+    text-align: right
+    position: relative
+    max-width: 1200px
+    margin: 0 auto
+    transition: transform .5s ease
+.header-share0
+    position: relative
+    top: 20vh
+    
+
+
+.header-grid-div1
+    display: grid
+    grid-template-columns: 1fr 5fr
+.header-next
+    margin: 16px 0 0 20px
+.header-grid-div3
+    display: grid
+    grid-template-columns: 5fr 1fr 1fr
+.header-languagear
+    margin: 24px 0 0 10px
+
+.header-language
+    margin-top: 16px
+
+.headerp-1grid
+    cursor: pointer
+    transition: all .5 ease
+    display: none
+.header-next
+    display: none
+.header-menu-el
+    cursor: pointer
+    transition: color .5 ease
+.header-menu-el:hover
+    color: $orange
+
+.header-info
+    cursor: pointer
+    transition: color border .5 ease
+.header-info:hover
+    color: $orange
+    border: 1px $orange solid
+
+.header-language
+    cursor: pointer
+    transition: color .5 ease
+.header-language:hover
+    color: $orange
+
+.header-twitch
+    cursor: pointer
+    transition: background-color .5 ease
+.header-twitch:hover
+    background-color: $orange
+ 
+
+
+.button
+    cursor: pointer
+    transition: color border .5 ease
+.button:hover
+    color: $ogrey
+    border: 2px $ogrey solid
+    .buttonar
+        opacity: 0
+
+.link
+    cursor: pointer
+    transition: color .5 ease
+.link:hover
+    color: $orange
+.link:active
+    color: $orange
+.header-next
+    cursor: pointer
+.header-next:hover
+    .cls-1
+        fill: white
+        stroke: white
+
+.header-share:hover
+    .header-share0
+        transform: scale(1.1)
+                
+        
+
+.hidden-menu-el
+    display: none
+    line-height: 2
+

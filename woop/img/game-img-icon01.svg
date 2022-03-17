@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.299" cy="0.178" r="0.586" gradientTransform="matrix(0.619, 0.786, -0.786, 0.619, 0.254, -0.167)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a6ec00"/>
+      <stop offset="1" stop-color="#5ca200"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_2960" data-name="Group 2960" transform="translate(6936.69 2422.041)">
+    <ellipse id="Oval-1" cx="40" cy="40" rx="40" ry="40" transform="translate(-6936.69 -2422.041)" fill="url(#radial-gradient)"/>
+    <g id="Group_2961" data-name="Group 2961" transform="translate(-6919 -2404)">
+      <g id="Group_2952" data-name="Group 2952" transform="translate(0 0)">
+        <path id="Path_1091" data-name="Path 1091" d="M44.507,22.349l-6.648-4.155,3.712-6.983-7.835-.274-.277-7.9-6.922,3.68L22.346.006,18.191,6.654,11.208,2.941l-.274,7.835-7.9.277,3.68,6.922L0,22.167l6.648,4.155L2.939,33.305l7.835.274.277,7.9,6.922-3.68,4.191,6.707,4.155-6.648L33.3,41.574l.274-7.835,7.9-.277L37.8,26.541ZM31.055,31.219l-.213,6.095-5.446-2.9L22.164,39.59l-3.269-5.23L13.51,37.222l-.216-6.164L7.2,30.845l2.9-5.446L4.923,22.167l5.23-3.269L7.291,13.513l6.164-.216L13.668,7.2l5.446,2.9,3.232-5.172,3.269,5.23L31,7.294l.216,6.164,6.095.213-2.9,5.446,5.172,3.232-5.23,3.269L37.219,31Z" transform="translate(-0.003 -0.006)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Group_2962" data-name="Group 2962" transform="translate(-6909.16 -2394.16)">
+      <g id="Group_2954" data-name="Group 2954">
+        <path id="Path_1092" data-name="Path 1092" d="M138.034,125.716l-3.7-2.309,2.078-3.909-4.355-.152-.155-4.424-3.848,2.045-2.346-3.754-2.309,3.7L119.5,114.83l-.152,4.355-4.424.155,2.045,3.848-3.754,2.346,3.7,2.309-2.078,3.909,4.355.152.155,4.424,3.848-2.045,2.346,3.754,2.309-3.7,3.909,2.078.152-4.355,4.424-.155-2.045-3.848Zm-5.97,3.734-2.684.094-.092,2.615-2.371-1.261-1.387,2.219-1.423-2.277-2.31,1.228-.094-2.684-2.615-.092,1.261-2.371-2.219-1.387,2.277-1.423-1.228-2.31,2.684-.094.092-2.615,2.371,1.261,1.387-2.219,1.423,2.277,2.31-1.228.094,2.684,2.615.092-1.261,2.371,2.219,1.387-2.277,1.423Z" transform="translate(-113.21 -113.213)" fill="#fff"/>
+      </g>
+    </g>
+    <ellipse id="Ellipse_69" data-name="Ellipse 69" cx="1.555" cy="1.555" rx="1.555" ry="1.555" transform="translate(-6882.108 -2367.624)" fill="#fff"/>
+    <ellipse id="Ellipse_70" data-name="Ellipse 70" cx="1.555" cy="1.555" rx="1.555" ry="1.555" transform="translate(-6878.5 -2364.016)" fill="#fff"/>
+    <ellipse id="Ellipse_68" data-name="Ellipse 68" cx="1.555" cy="1.555" rx="1.555" ry="1.555" transform="translate(-6877.5 -2404.016)" fill="#fff"/>
+    <ellipse id="Ellipse_72" data-name="Ellipse 72" cx="1.555" cy="1.555" rx="1.555" ry="1.555" transform="translate(-6915.5 -2366.016)" fill="#fff"/>
+    <ellipse id="Ellipse_73" data-name="Ellipse 73" cx="1.555" cy="1.555" rx="1.555" ry="1.555" transform="translate(-6918.108 -2403.624)" fill="#fff"/>
+    <ellipse id="Ellipse_71" data-name="Ellipse 71" cx="1.555" cy="1.555" rx="1.555" ry="1.555" transform="translate(-6914.5 -2400.016)" fill="#fff"/>
+  </g>
+</svg>

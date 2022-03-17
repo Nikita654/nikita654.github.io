@@ -1,0 +1,193 @@
+@import "sass/vars"
+.rposts
+    text-align: center
+    color: $lgrey
+.rposts-h2
+    animation-name: bounceInLeft
+    font-family: 'Raleway SemiBold', arial
+    color: $dgrey
+    margin-top: 7vh
+    margin-bottom: 1vh
+.rposts-p-up
+    animation-name: bounceInRight
+    max-width: 750px
+    margin: 0 auto 4vh auto
+.rposts-grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    max-width: 1200px
+    margin: 0 auto
+    .rposts-gr
+        animation-name: Down
+        cursor: pointer
+        text-align: left
+        color: $orange
+        transition: background-color color display opacity .5 ease 
+        a
+            font-family: 'Montserrat Light', arial
+            text-decoration: none
+            color: inherit
+        border: .3px rgba(157,157,157,.1) solid
+    grid-column-gap: 20px
+    margin-bottom: 2vh
+    .rposts-gr:hover
+        background-color: #372F2D
+        .rposts-img-in
+            background-color: #372F2D
+        .rposts-p
+            color: white
+        .rposts-h3
+            color: $lorange
+        .date
+            display: none
+        .dateActive
+            opacity: 1
+        .rposts-hover-share,.rposts-hover-lupa
+            opacity: 1
+
+.rposts-grACTIVE
+    background-color: #372F2D
+    .rposts-img-in
+        background-color: #372F2D
+    .rposts-p
+        color: white
+    .rposts-h3
+        color: $lorange
+    .date
+        display: none
+    .dateActive
+        opacity: 1
+    .rposts-hover-share,.rposts-hover-lupa
+        opacity: 1
+
+
+.date
+    
+    background-size: cover
+    height: 60px
+    max-width: 50px
+    margin: -200px 0 140px 20px
+.dateActive
+   
+    opacity: 0
+    background-size: cover
+    height: 60px
+    max-width: 50px
+    margin: -200px 0 140px 20px
+.rposts-img
+    background-size: cover
+    height: 220px
+    object-fit: none
+    transition: all .5s ease
+.rposts-img1
+    background-image: url("img/rposts-img1.png")
+    animation-duration: 2s
+.rposts-img2
+    background-image: url("img/rposts-img2.png")
+.rposts-img3
+    background-image: url("img/rposts-img3.png")    
+.rposts-h3,.rposts-p
+    padding-left: 20px
+.rposts-h3
+    font-family: 'Raleway Medium', arial
+    margin: 0
+    padding-top: 20px
+.rposts-p
+    transition: all .5s ease
+    color: $lgrey
+    margin: 10px 0 10px 0
+.rposts-a1
+    padding-bottom: 20px
+    padding-left: 20px
+.rposts-left,.rposts-right
+    background-size: cover
+    height: 22px
+    width: 22px
+    display: inline-block
+    margin: 0 auto
+    transition: transform fill rotate .5s ease
+.rposts-left
+    
+    cursor: pointer
+    margin-bottom: 2vh
+.rposts-right
+    
+    cursor: pointer
+    transform: rotate(180deg)
+    margin-bottom: 2vh
+.rposts-left:hover
+    transform: scale(1.1)
+    .cls-1
+        fill: $lorange
+.rposts-right:hover
+    transform: scale(1.1) rotate(180deg)
+    .cls-1
+        fill: $lorange
+.rposts-circle
+    cursor: pointer
+    background-size: cover
+    height: 10px
+    max-width: 10px
+    min-width: 10px
+    background-color: #999898 
+    border-radius: 50%
+    opacity: .7
+    border: 2px rgba(90,60,60,0) solid
+    transition: background-color border .5s ease
+.rposts-circle:hover
+    background-color: rgba(90,60,60,0)
+    border: 2px $lorange solid
+.rposts-circle-active 
+    background-color: rgba(90,60,60,0)
+    border: 2px $lorange solid
+.rp-grid-circle
+    position: relative
+    top: -23vh
+    display: grid
+    max-width: 100px
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    margin: 0 auto
+    grid-column-gap: 10px
+.rposts-img-in
+    background-size: cover
+    height: 240px
+    z-index: 3
+    opacity: .6
+.rposts-hover-grid
+    display: grid
+    max-width: 70px
+    grid-template-columns: 1fr 1fr
+    margin: 0 auto -25px auto
+    position: relative
+    grid-column-gap: 20px
+    top: -15vh
+.rposts-hover-share,.rposts-hover-lupa
+    cursor: pointer
+    opacity: 0
+    transition: fill .5s ease
+    transition: all .5s ease
+.rposts-hover-lupa:hover
+    .cls-1
+        fill: $lorange
+.rposts-hover-share:hover
+    .cls-1
+        fill: $lorange
+
+@keyframes switching 
+    from 
+        transform: translateY(0px)
+        opacity: 1
+    to
+        opacity: 0
+        transform: translateY(-200px)
+
+@keyframes switching1 
+    from 
+        opacity: 0
+        transform: translateY(-200px)
+    to
+        opacity: 1
+        transform: translateY(0px)
+
+
+

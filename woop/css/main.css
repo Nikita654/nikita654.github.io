@@ -1,0 +1,1779 @@
+@import url(normalize.css);
+@font-face{font-family:"Avenir Next Cyr-Demi";src:url("../fonts/AvenirNextCyrDemi.woff") format("woff")}
+@font-face{font-family:"Avenir Next Cyr";src:url("../fonts/AvenirNextCyr.woff") format("woff")}
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+    max-width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #001428;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+header{
+    position: relative;
+    margin-bottom: 60px;
+}
+.header{
+    max-width: 1216px;
+    min-width: 1216px;
+    margin: 0 auto;
+    padding-top: 44px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.menu{
+    display: none;
+}
+.games{
+    max-width: 1216px;
+    min-width: 1216px;
+    margin: 0 auto;
+}
+.h-right,.h-left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.h-right{
+    grid-template-columns: 1fr 212px;
+
+}
+.h-left{
+    grid-template-columns: 4fr 6fr;
+}
+.h-lang{
+    margin-left: auto;
+}
+.h-right img{
+    height: 8px;
+    position: relative;
+    top: 34px;
+    margin: 0 68px 0 10px;
+    cursor:pointer;
+}
+.h-lang,.h-plat{
+    display: flex;
+}
+.h-lang{
+    position: relative;
+}
+.h-plat img{
+    max-width: 46.2px;
+    min-width: 46.2px;
+    height: 45.9px;
+    position: relative;
+    top: 16px;
+    margin: 0 22px 0 0px;
+    
+}
+.h-plat-text,.h-lang-current{
+  font-family:"Avenir Next Cyr";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #6a8bc3;
+  
+}
+.h-lang-current{
+    cursor:pointer;
+    margin-top: 26px;
+    transition: all .5s ease;
+}
+.other-lang
+{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    z-index: 5;
+   display: none;
+}
+.h-lang-current:hover{
+    color: white;
+}
+.h-enter{
+    background-color: transparent;
+    width: 208px;
+    height: 56px;
+    border-radius: 28px;
+    border: solid 2px rgba(81,226,103,0.25);
+    font-family:"Avenir Next Cyr";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: #51e267;
+    text-align: center;
+    margin-top: 10px;
+    outline: none;
+    cursor:pointer;
+    margin-left: 4px;
+}
+.h-enter:hover{
+    background-color: #51e267;
+    border: solid 2px #51e267;
+    font-weight: bold;
+    color: #001428;
+}
+.game-play:hover{
+    background-color: #51e267;
+    border: solid 2px #51e267;
+    font-weight: bold;
+    color: #001428;
+    box-shadow: 0px 0px 10px rgba(0, 213, 170, 0.4);
+}
+.button:active{
+    transform: scale(0.95)
+}
+.button{
+    transition: all .5s ease;
+}
+.h-logotype{
+    margin-top: 10px;
+}
+.top{
+    padding-top: 48%
+}
+
+
+
+.top-title{
+font-family:"Avenir Next Cyr-Demi";
+  font-size: 50px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  top: -250px;
+  margin-bottom: -200px;
+}
+.top-title-name{
+    color: #51e267;
+}
+.top-play{
+    max-width: 280px;
+    
+    border-radius: 40px;
+    background-color: #092240;
+    display: flex;
+    font-family:"Avenir Next Cyr";
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4e8dff;
+    cursor:pointer;
+}
+.top-play img{
+    max-width: 44px;
+    min-width: 44px;
+    height: 44px;
+    margin: 17px 0 0 21px;
+}
+
+.top-play-text{
+    margin: 6px 0 6px 20px;
+}
+.top-bt
+{
+width: 280px;
+
+border-radius: 40px;
+box-shadow: 0 4px 56px 0 rgba(0, 213, 170, 0.55);
+background-color: #51e267;
+font-family:"Avenir Next Cyr-Demi";
+font-size: 20px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: 3.2;
+letter-spacing: normal;
+text-align: center;
+color: #001428;
+cursor:pointer;
+}
+.top-bt:hover{
+    box-shadow: 0px 0px 10px rgba(0, 213, 170, 0.55);
+    
+
+}
+.top-play:hover{
+    box-shadow: 0px 15px 45px -15px #0f3561;
+
+}
+.top-bt-text{
+    padding: 8px 0;
+}
+.top-btns{
+    max-width: 592px;
+    min-width: 592px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+    margin: 0 auto;
+}
+.header-back{
+    position: absolute;
+    left:0;
+    top: 0;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.top-text
+{
+    margin-top: 60px;
+font-family:"Avenir Next Cyr";
+  font-size: 26px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: #6a8bc3;}
+.top-text-count{
+    color: white;
+}
+
+.games-grid{
+    display: grid;
+    grid-template-columns: repeat(4,280px);
+    grid-gap: 32px;
+
+}
+.games-title{
+    font-family:"Avenir Next Cyr-Demi";
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.92;
+    letter-spacing: normal;
+    color: #6a8bc3;
+margin-bottom: 74px;}
+.games-game-wrapper{
+    margin: 0 40px 0 40px;
+    text-align: center
+}
+.game-img{
+    margin-bottom: -50px;
+}
+.game-img2{
+    margin-bottom: -23px;
+}
+.game-img3{
+    margin-bottom: -17px;
+}
+.game-img4{
+    margin-bottom: -52px;
+}
+
+.game-label{
+    display:flex;
+    margin-bottom: 24px;
+}
+.game-name{
+    margin-top: 0;
+}
+.game-label-sort{
+    margin-left: auto;
+}
+.games-game{
+    background-color: rgba(78,141,255,0.07);
+    border-radius: 24px;
+}
+.game-label-sort{
+    width: 57px;
+    height: 32px;
+    border-radius: 24px;
+    background-color: #4e8dff;
+    font-family:"Avenir Next Cyr-Demi";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #001428;
+    position: relative;
+    top: 24px;
+}
+.game-label-sort2{
+    position: relative;
+    top: 33.5px;
+}
+
+.game-label-sort0{
+    padding: 6px 0 4px 0 ;
+}
+.game-name
+{
+    font-family:"Avenir Next Cyr";
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  
+  margin-bottom: 10px;
+}
+.game-sort
+{
+  font-family:"Avenir Next Cyr";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: #6a8bc3;
+  
+  margin-bottom: 36px;
+}
+.game-descr
+{
+    width: 200px;
+    opacity: 0.7;
+    font-family:"Avenir Next Cyr";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4e8dff;
+   
+    margin-bottom: 54px;
+}
+.game-descr4{
+    margin-bottom: 346px;
+}
+.game-feature{
+    font-family:"Avenir Next Cyr";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #6a8bc3;
+  margin-bottom: 42px;
+ 
+}
+.game-feature1{
+    margin-bottom: 22px;
+}
+.game-play{
+    background-color: transparent;
+    width: 148px;
+    height: 56px;
+    border-radius: 40px;
+  box-shadow: 0 4px 24px 0 rgba(0, 213, 170, 0.4);
+    border: solid 2px rgba(81,226,103,0.25);
+    font-family:"Avenir Next Cyr";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: #51e267;
+    text-align: center;
+    margin-bottom: 48px;
+    outline: none;
+    cursor:pointer;
+    
+}
+.game-line
+{
+    background-size: cover;
+    background-color: #001428;
+    max-width: 100%;
+    min-width: 100%;
+    height: 1px;
+    margin-bottom: 28px;
+}
+.game-img-icon  {
+   
+    position: relative;
+    left: -5px;
+}
+.game-img-icon2  path{
+    fill:#00FDFF;
+    box-shadow: 0 0 10px rgba(0,253,255, 0.6)
+}
+.game-img-icon01 ellipse{
+    fill:#5ca200;
+    box-shadow: 0 0 10px rgba(92,162,0, 0.6);
+}
+.game-img-icon2  {
+    margin-bottom: -11px;
+    position: relative;
+    left: -15px;
+}
+
+.game-img-icon3 #Path_1034{
+   fill: #f55f23;
+   box-shadow: 0 0 10px rgba(245,95,35, 0.6)
+}
+.game-img-icon4  #Path_1011{
+    fill:rgb(74, 138, 250);
+    box-shadow: 0 0 10px rgba(74, 138, 250, 0.6)
+}
+.game-more
+{
+    font-family:"Avenir Next Cyr";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4e8dff;
+  cursor:pointer;
+  margin-bottom: 33px;
+  transition: all .5s ease;
+}
+.game-more4{
+    color: #ff4e6c;
+}
+.game-more:hover{
+    color: white;
+}
+.game-title{
+    display: flex;
+}
+.game-status{
+    width: 54px;
+    height: 18px;
+    border-radius: 54px;
+    background-color: #ff4e6c;
+    font-family:"Avenir Next Cyr";
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    text-align: center;
+    color: #051d37;
+    margin-left: 13px;
+    position: relative;
+    top: 1px
+}
+.game-status3{
+    width: 42px;
+    background-color: #00c524;
+}
+.game-status p{
+    margin: 0 0 0px 0;
+}
+.game-descr2{
+    margin-bottom: 186px
+}
+.game-descr3{
+    margin-bottom: 10px
+}
+.box{
+    max-width: 1216px;
+    min-width: 1216px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.box p,.box img,.box h2{
+    position: absolute;
+}
+.box .box-img{
+    position: relative;
+    margin: 0 auto;
+}
+.box-img68{
+    display: none;
+}
+.box-img24{
+    display: none;
+}
+.box-img20{
+    display: none;
+}
+.box-text{
+    opacity: 0.7;
+  font-family:"Avenir Next Cyr";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: #6a8bc3;
+}
+.box-descr
+{
+    opacity: 0.7;
+    font-family:"Avenir Next Cyr";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4e8dff;
+}
+.box-label
+{
+    font-family:"Avenir Next Cyr-Demi";
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.92;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.box-text1{
+    left: 33%;
+    top: 19%;
+}
+.box-text2{
+    left: 79%;
+    top: 22%;
+}
+.box-text3{
+    left: 77%;
+    top: 50%;
+}
+.box-text4{
+    left: 14%;
+    top: 50%;
+}
+.box-text5{
+    left: 49%;
+    top: 65%;
+}
+.box-key,.box-label,.box-descr{
+    left: 0;
+}
+.box-key{
+top: 26%;
+}
+.box-label{
+    top: 32%;
+}
+.box-descr{
+    top: 37%;
+}
+.best{
+    max-width: 1216px;
+    min-width: 1216px;
+    margin: 0 auto;
+}
+.best-grid{
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    grid-column-gap: 32px;
+}
+.lider-label{
+    font-family:"Avenir Next Cyr-Demi";
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4e8dff;
+  margin-bottom: 74px;
+}
+.lider-main{
+    background-color: rgba(78,141,255,0.07);
+    border-radius: 40px;
+    position: relative;
+    text-align: center
+}
+.lider-name{
+    font-family:"Avenir Next Cyr-Demi";
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.lider-number{
+    position: absolute;
+    left:67%;
+    top: 8%;
+    width: 40px;
+    height: 33px;
+    background-color: #00d5aa;
+    font-family: "Avenir Next Cyr";
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #001428;
+    border-radius: 50%;
+    padding-top: 7px;
+}
+.lider-win{
+    font-family:"Avenir Next Cyr";
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4e8dff;
+  margin-bottom: 83px;
+}
+.lider-line{
+    background-size: cover;
+    background-color: #001428;
+    max-width: 100%;
+    min-width: 100%;
+    height: 1px;
+    margin-bottom: 40px;
+}
+.liders-el{
+    display: grid;
+    grid-template-columns: 118px 108px  1fr;
+}
+.lider-labelM{
+    display: grid;
+    grid-template-columns:  410px 1fr;
+}
+.lider-win{
+    max-width: 165px;
+    min-width: 165px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.liders-number{
+    font-family:"Avenir Next Cyr";
+    width: 40px;
+    height: 33px;
+    background-color: #00d5aa;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #001428;
+    border-radius: 50%;
+    padding-top: 7px;
+    position: relative;
+    margin: 49px 29px 49px 49px;
+}
+.liders-img{
+    position: relative;
+    margin: 29px 0;
+    margin-right:28px;
+}
+.lider-game{
+    margin: 0 55px 0 35px;
+    display: flex;
+    margin-bottom: 44px;
+}
+.lider-game-play{
+    margin-bottom: 48px;
+}
+.lider-game-text{
+    font-family:"Avenir Next Cyr";
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6a8bc3;
+    margin-left: 16px;
+}
+.lider-game-text a{
+    text-decoration: none;
+    color: #4e8dff;
+}
+.liders-name
+{
+    font-family:"Avenir Next Cyr";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin: 58px 0;
+    
+}
+.liders-win{
+    font-family:"Avenir Next Cyr";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4e8dff;
+  margin: 58px 0;
+}
+.liders-line{
+    background-size: cover;
+    background-color: #001428;
+    max-width: 100%;
+    min-width: 100%;
+    height: 1px;
+}
+.oplata-last,.oplata-last-descr{
+    margin: 0;
+    font-family:"Avenir Next Cyr-Demi";
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4e8dff;
+}
+.oplata{
+    max-width: 1216px;
+    min-width: 1216px;
+    margin: 0 auto;
+}
+.oplata-last{
+    color: #ffffff;
+    margin-top: 130px;
+}
+.oplata-last-descr{
+    margin-bottom: 74px;
+}
+.oplata-grid{
+    display: grid;
+    grid-template-columns: repeat(4,280px);
+    grid-gap: 32px;
+    margin-bottom: 144px;
+}
+.oplata-item-name
+{
+  font-family:"Avenir Next Cyr";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.oplata-item-descr{
+    font-family:"Avenir Next Cyr";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4e8dff;
+  margin-bottom: 60px;
+}
+.oplata-item-img{
+    margin-bottom: -128px;
+    position: relative;
+    top: -32px;
+}
+.oplata-item{
+    background-color: rgba(78,141,255,0.07);
+    border-radius: 24px;
+    text-align: center
+}
+.oplata-item-line{
+    margin-bottom: 28px;
+}
+.oplata-item-sp{
+    margin-bottom: 30px;
+}
+.oplata-item-sp2{
+    position: relative;
+    top: 10px;
+}
+
+.otz{
+    max-width: 1216px;
+    min-width: 1216px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.otz-grid{
+    position: relative;
+    left: -288px;
+    max-width: 80px;
+    min-width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+    grid-template-columns: 104px 104px 144px 104px 40px;
+    margin-top: 144px;
+    margin-bottom: 15px;
+}
+.otz-grid .owl-stage-outer{
+    overflow: visible;
+    height: 80px;
+}
+.otz-grid .active img{
+    opacity: 1
+}
+
+.otz-grid-img1{
+    transition: all .5s ease;
+}
+.otz-grid-img:hover{
+    opacity: 1;
+}
+.otz-grid-img{
+    cursor: pointer;
+    opacity: 0.4;
+    box-shadow: 0 0 64px 0 rgba(0, 213, 170, 0.35);
+    transition: all .5s ease;
+    border-radius: 20px;
+}
+.otz-name{
+    font-family:"Avenir Next Cyr";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.otz-status{
+    font-family:"Avenir Next Cyr";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4e8dff;
+  margin-bottom: 50px;
+}
+
+.otz-text{
+    max-width: 800px;
+    margin: 0 auto;
+    font-family:"Avenir Next Cyr";
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    text-align: center;
+    color: #6a8bc3;
+}
+.otz-grid-imgc{
+    box-shadow: 0 0 64px 0 rgba(0, 213, 170, 0.35);
+}
+.otz-grid-imgb{
+    box-shadow: 0 0 64px 0 rgba(0, 213, 170, 0.35);
+}
+.otz-arrow-left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    cursor: pointer;
+    z-index: 10000;
+}
+.otz-arrow-right{
+    position: absolute;
+    left: 97.4%;
+    top: 50%;
+    cursor: pointer;
+    z-index: 10000;
+}
+.otz-arrow-right:active{
+    transform: scale(0.95)
+}
+.otz-arrow-left:active{
+    transform: scale(0.95)
+}
+.soon{
+    max-width: 1216px;
+    min-width: 1216px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    margin-top: 144px;
+}
+.soon-label{
+    font-family:"Avenir Next Cyr-Demi";
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 85px;
+}
+.soon-grid{
+    display: grid;
+    grid-template-columns: repeat(4,280px);
+    grid-gap: 32px;
+    margin-bottom: 119px;
+}
+.soon-item{
+    text-align: left;
+}
+.soon-img2{
+    margin-top: 17px;
+}
+.soon-img3{
+    margin-top: 14px;
+}
+.soon-img4{
+    margin-top: 17px;
+}
+.soon-item-title{
+    font-family:"Avenir Next Cyr-Demi";
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0080ff;
+    margin-right: 105px;
+    margin-top: 33px;
+}
+.soon-item-descr{
+    font-family:"Avenir Next Cyr";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6a8bc3;
+    margin-top: 33px;
+}
+.soon-bt{
+    background-color: #4e8dff;
+    box-shadow: 0 0px 0px 0 rgba(0, 213, 170, 0.55);
+}
+footer{
+    max-width: 1216px;
+    min-width: 1216px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 208px 1fr 142px;;
+    grid-gap: 32px;
+    margin-top: 215px;
+}
+footer a{
+    text-decoration: none;
+    color: inherit;
+    transition: all .5s ease;
+}
+footer a:hover{
+    color: white
+}
+.footer-links
+{font-family:"Avenir Next Cyr";
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0080ff;}
+    .footer-links a{
+        margin-right: 22.5px;
+    }
+.social{
+    margin-right: 22.5px;
+}
+.footer-logo{
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+}
+.popup-promo
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    max-width: 100%;
+    min-width: 100%;
+    overflow: auto;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.19);
+    z-index: 10000;
+}
+.popup-promo-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 800px;
+    min-width: 800px;
+    height: 600px;
+    border-radius: 60px;
+    box-shadow: 0 16px 32px 0 #001528;
+    background-color: #4e8dff;
+    text-align: center
+}
+.popup-promo-video{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 90%;
+    min-width: 90%;
+    height: 80%;
+    
+    display: none;
+    box-shadow: 0 16px 32px 0 #001528;
+   
+}
+.popup-promo-v{
+   
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+}
+.promo-title
+{
+  font-family:"Avenir Next Cyr-Demi";
+  font-size: 42px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.76;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 72px;
+}
+.promo-text{
+width: 492px;
+  
+  font-family: "Avenir Next Cyr";
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+  margin-top: 78px;
+}
+.promo-button-soc{
+  font-family: "Avenir Next Cyr-Demi";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  width: 176px;
+  height: 64px;
+  box-shadow: 0 4px 56px 0 rgba(0, 213, 170, 0.55);
+  border: solid 1.5px rgba(255,255,255,0.4);
+  border-radius: 40px;
+  background-color: transparent;
+  margin: 0 auto;
+  outline: none;
+  margin-right: 32px;
+  cursor: pointer;
+  margin-top: 38px;
+  transition: all .5s ease;
+}
+.promo-button-soc:hover .cls-199{
+    fill: #00ff2f;
+}
+.promo-button-soc  .cls-199{
+    transition: all .5s ease;
+}
+.promo-button-soc:hover .cls-198{
+    stroke: #00ff2f;
+}
+.promo-button-soc:hover{
+    color: #00ff2f;
+    border: solid 1.5px rgba(0,197,36,0.4);
+}
+.popup-soc-icon{
+    position: relative;
+    top: 5px;
+    margin-right: 13.5px;
+}
+.popup-soc-img{
+    position: relative;
+    top: 0px;
+    margin-right: 13.5px;
+    display: none;
+    margin-bottom: -10px;
+}
+.popup-soc-icon2{
+    position: relative;
+    top: 3px;
+    margin-right: 13.5px;
+}
+.promo-cross{
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    cursor: pointer;
+    transition: all .5s ease
+}
+.promo-cross:hover .cls-99{
+    
+    stroke: black;
+}
+.promo-cross .cls-99{
+    transition: all .5s ease
+}
+.promo-button-get{
+    margin: 0 auto;
+    margin-top: 78px;
+}
+.popup-priz-text{
+    display: none;
+    margin-left: 185px;
+    margin-top: 71px;
+
+}
+.priz-text{
+    max-width: 355px;
+    min-width: 355px;
+    height: 53px;
+    font-family: "Avenir Next Cyr";
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    
+  }
+.priz-text a{
+    color:#a1c2ff;
+}
+.popup-priz-img{
+    margin-right: 27px;
+}
+.popup-priz-img:hover .cls-299{
+ fill: #00ff2f;
+}
+.popup-priz-img .cls-299{
+    transition: fill .5s ease
+   }
+.popup-promocode{
+  max-width: 384px;
+  min-width: 384px;
+  height: 70px;
+  border-radius: 15px;
+  background-color: rgba(49,111,222,0.4);
+  font-family: "Avenir Next Cyr-Demi";
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 3.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding-top:5px;
+  margin: 0 auto;
+  margin-top: 37px;
+  position: relative;
+  display: none;
+}
+.popup-promocode-img{
+    position: absolute;
+    left: 83%;
+    top: 30%;
+}
+.popup-promocode-img:hover .cls-399{
+    fill: #00ff2f;
+   }
+   .popup-promocode-img .cls-399{
+    transition: fill .5s ease;
+    cursor: pointer;
+   }
+   .lider-img{
+    max-width: 144px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 144px;
+    height: 144px;
+    object-fit: contain;
+    position: relative;
+    top: 68px;
+    margin-bottom:144px;
+    border-radius: 20px;
+}
+.liders-img{
+    border-radius: 20px;
+}
+@media(max-width: 1250px){
+    .h-plat{
+        display:none;
+    }
+    .top {
+        padding-top: 52%;
+    }
+    .header,.games,.box,.best,footer,.soon,.otz,.oplata{
+        max-width: 896px;
+        min-width: 896px;
+    }
+    .header-back {
+        top: 30px;
+       }
+    .games-grid{
+        transition: transform .5s ease;
+        transform: translateX(-164px);
+    }
+    .box-img{
+        display: none;
+    }
+    .box-img24{
+        display: block;
+    }
+    .lider-img{
+        top: 68px;
+        margin-bottom:99px;
+    }
+    .box-text1{
+        left: 45%;
+        top: 7%;
+    }
+    .box-text2{
+        left: 82%;
+        top: 22%;
+    }
+    .box-text3{
+        left: 82%;
+        top: 49%;
+    }
+    .box-text4{
+        left: 7%;
+        top: 50%;
+    }
+    .box-text5{
+        left: 48%;
+        top: 65%;
+    }
+    .box-key,.box-label,.box-descr{
+        left: 0;
+    }
+    .box-key{
+    top: 21%;
+    }
+    .box-label{
+        top: 28%;
+    }
+    .box-descr{
+        top: 33%;
+    }
+    .liders-el{
+        grid-template-columns: 118px 108px 110px 1fr;
+    }
+    .lider-labelM{
+        grid-template-columns:  210px ;
+    }
+    .liders-win{
+        margin-top: 0;
+        margin-bottom: 46px;
+    }
+    .liders-name{
+        margin-top: 46px;
+        margin-bottom: 0;
+    }
+    .lider-win{
+        margin-bottom: 148px;
+    }
+    .oplata-iteml,.otz-arrow-left,.otz-arrow-right{
+    display: none;
+    }
+    .soon-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 60px;
+        grid-row-gap: 40px;
+    }
+    footer{
+        grid-template-columns: 180px 1fr 142px;;
+    }
+}
+@media(max-width: 1023px){
+    .soon-item-title{
+        margin-right: 0
+    }
+    .popup-priz-img{
+        display: none;
+    }
+    .lider-img{
+        height: 144px;
+        position: relative;
+        top: 88px;
+        margin-right: 68px;
+        margin-left: 68px
+    }
+    .popup-promo-content{
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        transform: translate(0%,0%);
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
+        border-radius: 0px;
+        box-shadow: 0 0px 0px 0 #001528;
+        background-color: #4e8dff;
+        text-align: center;
+        padding-bottom: 30vh;
+    }
+    .promo-title{
+        margin-top: 30vh;
+    }
+    .header,.games,.box,.best,footer,.soon,.otz,.oplata{
+        max-width: 640px;
+        min-width: 640px;
+    }
+    .header-back{
+        top: 60px;
+    }
+    .top{
+        padding-top: 59%
+    }
+    .games-grid{
+        grid-template-columns: repeat(2,280px);
+        grid-gap: 50px;
+        transform: translateX(0px);
+        margin-left: 15px;
+    }
+    .box-img68{
+        display: block;
+    }
+    .box-img24,.liders-label{
+        display: none;
+    }
+    .box-text1{
+        left: 46%;
+        top: 5%;
+    }
+    .box-text2{
+        left: 88%;
+        top: 21%;
+    }
+    .box-text3{
+        left: 87%;
+        top: 48%;
+    }
+    .box-text4{
+        left: 0%;
+        top: 49%;
+    }
+    .box-text5{
+        left: 49%;
+        top: 65%;
+    }
+    .best-grid{
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+    .oplata-grid{
+        grid-template-columns: repeat(2,280px);
+        grid-gap: 50px;
+        transform: translateX(0px);
+        margin-left: 15px;
+    }
+    .oplata-iteml{
+        display: block;
+        }
+    footer{
+            grid-template-columns: 1fr 1fr;
+            text-align:center;
+    }
+    .footer-links{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        text-align:center;
+    }
+    .footer-logo{
+        text-align:center;
+        margin: 0 auto;
+    }
+    .lider-68{
+        display: flex;
+    }
+    .lider-name-68{
+        margin-top: 108px;
+        text-align: left;
+    }
+    .lider-name{
+        text-align: left;
+    }
+    .lider-win{
+        max-width: 265px;
+        min-width: 265px;
+        text-align: left;
+    }
+    .lider-number{
+    left: 29.5%;
+    top: 14%;
+    }
+    .lider-game-img{
+        max-width: 40px;
+        min-width: 40px;
+        height: 40px;
+    }
+    .lider-game{
+        
+        margin-right: 170px;
+        margin-top: 10px;
+    }
+    .h-right img{
+        margin-right: 20px;
+    }
+}
+@media(max-width: 767px){
+    
+    .promo-button-soc{
+        margin: 32px 32px 0 32px;
+    }
+    .lider-win {
+        margin-bottom: 94px;
+    }
+   
+.lider-name-68 {
+    margin-top: 54px;
+}
+    .header{
+        padding-top: 32px;
+        grid-template-columns: 1fr;
+    }
+    .header-back{
+        top: 100px;
+        max-width: 100%;
+        min-width: 100%;
+        left: 0%;
+    }
+    .top-btns{
+        grid-template-columns: 1fr;
+    }
+    .top-play,.top-bt{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .top-title{
+        font-size: 32px;
+    }
+    .top-play{
+        min-width: 280px;
+    }
+    .top-text,.promo-title,.promo-text{
+        max-width: 80%;
+        min-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .promo-cross{
+        left: 85%
+    }
+    .promo-title{
+        line-height: 1.5;
+    }
+    .games-title{
+        text-align: center
+    }
+    .h-right{
+        display: none;
+    }
+    .menu{
+        display: block;
+        font-size: 32px;
+        color: #51e267;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 20px;
+        margin-left: auto;
+    }
+    .header,.games,.box,.best,footer,.soon,.otz,.oplata,.top-btns{
+        max-width: 80%;
+        min-width: 80%;
+    }
+    .top{
+        padding-top: 110%
+    }
+    .games-grid{
+        margin-right: auto;
+        margin-left: auto;
+        grid-template-columns: 1fr;
+        grid-column: 0;
+    }
+    .games-game{
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 280px;
+        min-width: 280px;
+    }
+    .box-img68{
+        display: none;
+    }
+   main .box .box-img20{
+        display: block;
+        margin-top: 280px;
+        margin-bottom: 42px;
+    }
+    .box-text1{
+        left: 66%;
+        top: 5%;
+    }
+    .box-text2{
+        left: 66%;
+        top: 27%;
+    }
+    .box-text3{
+        left: 66%;
+        top: 45%;
+    }
+    .box-text4{
+        left: 66%;
+        top: 63%;
+    }
+    .box-text5{
+        left: 66%;
+        top: 86%;
+    }
+    .box-key{
+        top: -25%;
+        }
+        .box-label{
+            top: -15%;
+        }
+        .box-descr{
+            top: -10%;
+        }
+        .lider-68{
+            display: block;
+        }
+        .lider-name-68{
+            text-align: center;
+        }
+        .lider-name{
+            text-align: center;
+        }
+        .lider-win{
+            max-width: 150px;
+            min-width: 150px;
+            text-align: center;
+        }
+        .lider-number{
+        left: 68%;
+        top: 10%;
+        }
+        
+        .lider-game {
+            margin-right: 55px;
+            margin-top: 0px;
+        }
+        .best,.soon,.otz{
+            max-width: 280px;
+            min-width: 280px;
+        }
+        .oplata-grid{
+            grid-template-columns: 280px;
+          
+        }
+        .lider-label{
+            margin-bottom: 26px;
+        }
+        .otz-grid-imgb{
+        display: block;}
+        .otz-grid {
+            grid-template-columns: 108px 148px 40px;}
+            .soon-grid
+            {
+                grid-template-columns: 1fr;
+            }
+            .top-btns{
+                max-width: 100%;
+                min-width: 100%;
+            }
+            .oplata-grid,.oplata-item,.games{
+                max-width: 280px;
+            min-width: 280px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .best-grid
+        {
+            grid-template-columns: 280px;
+        }
+        .liders-number{
+            position: absolute;
+            left: 5%;
+            top: -18%;
+            z-index: 100;
+        }
+        .liders-main{
+            background-color: transparent;
+        }
+
+        .liders-line{background-color: rgba(78,141,255,0.1);}
+        .liders-el{
+            position: relative;
+        }
+        .liders-win{
+            max-width: 130px;
+        }
+        .liders-img{
+            margin-right: 5px;
+        }
+        .footer-logo{
+            display: none;
+        }
+        footer{
+            max-width: 90%;
+            min-width: 90%;
+            grid-template-columns: 1fr;
+            margin-bottom: 34px;
+    }
+    .footer-links {
+         grid-column: 1; 
+        grid-row: 1/2;
+        text-align: center;
+    }
+    .oplata,.otz{
+        max-width: 95%;
+        text-align: center;
+    }
+    
+    .oplata-last-descr,.oplata-last{
+        text-align: center
+    }
+    .popup-priz-text{
+        display: block;
+        max-width: 80%;
+        min-width: 80%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        height: auto;
+    }
+    
+    .priz-text{
+        max-width: 100%;
+        min-width: 100%;
+        text-align: center;
+        height: auto;
+    }
+    
+}
+
+@media(min-width: 550px) and (max-width: 768px){
+    .promo-cross{
+        left: 90%
+    }
+}
+@media(max-width: 390px){
+   
+
+.popup-promocode{
+    display: block;
+    max-width: 95%;
+    min-width: 95%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+}}
+@media(max-width: 657px){
+    .otz-grid{
+        position: relative;
+        left: 0px
+    }}
+
+
+.oplata-item-img
+{
+    max-width: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 80px;
+    height: 80px;
+    object-fit: contain;
+    z-index: -1;
+    margin-top: 64px;
+    margin-bottom: -30px;
+    border-radius: 20px;
+}
+.liders-img{
+    border-radius: 20px;
+    max-width: 80px;
+    min-width: 80px;
+    height: 80px;
+    object-fit: contain
+}
